@@ -9,3 +9,11 @@ body{
   background: linear-gradient(to bottom right, #2e3a4e, #71747ab4), url("https://res.cloudinary.com/gcloud1991/image/upload/v1510698237/6_-_Japan_-_9_Hakone_11_hvg0cw.jpg") no-repeat center; 
   background-size: cover; 
 }
+
+.centered{
+  text-align: center;
+}
+
+.white{
+  color: white;
+}

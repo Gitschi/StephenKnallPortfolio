@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+#headLineName{
+  size: 500px;
+}
+
 .headLine{
-  color: white;
+  margin-top: 50px;
+}
+
+.headLine h1{
+  font-size: 70px;
+}
+
+.introductionContainer{
+  margin-top: 30px;
 }
