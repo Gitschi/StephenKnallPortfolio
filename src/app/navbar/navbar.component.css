@@ -15,3 +15,6 @@ nav{
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
 }
 
+.languageChange{
+  width: 50px;
+}

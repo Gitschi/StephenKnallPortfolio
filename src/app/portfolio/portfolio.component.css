@@ -1,0 +1,48 @@
+.productContainer{
+  background-color: #132b5285;
+  width: 100%;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.portfolioThumbnail{
+  width: 512px;
+  max-width: 90%;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.portfolioIntroText{
+  color: white;
+  margin: 20px;
+}
+
+.toolLogos{
+  margin: 10px;
+}
+
+.toolLogo{
+  height: 60px;
+  margin: 5px 10px;
+}
+
+.actionLinks{
+  margin: auto;
+  text-align: center;
+}
+
+.externalLink{
+  margin: 10px 20px;
+}
+
+.linkImage{
+	width: 200px;
+}
+
+.productRuler{
+  width: 90%;
+	height: 6px;
+	background: url(https://res.cloudinary.com/knallcloud/image/upload/v1539696648/hr-11.png) repeat-x 0 0;
+  border: 0;
+}

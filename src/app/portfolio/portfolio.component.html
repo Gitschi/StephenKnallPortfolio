@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="productContainer">
+
+    <!-- A single Product -->
+    <div *ngFor="let product of products" class="singleProduct">
+      <div class="row">
+        <div class="col-sm-12 col-xl-6">
+          <img class="portfolioThumbnail" [src]="product.thumbnailPath">
+        </div>
+        <div class="col-sm-12 col-xl-6">
+          <p class="portfolioIntroText" [innerHtml]="product.introTextEN"></p>
+          <div class="toolLogos">
+            <img *ngFor="let logo of product.toolLogos" class="toolLogo" [src]="logo.imagePath" [title]="logo.title">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="actionLinks">
+          <a *ngFor="let actionButton of product.actionButtons" class="externalLink" target="_blank" rel="noopener noreferrer" [href]="actionButton.link">
+            <img class="linkImage" [src]="actionButton.imagePath">
+          </a>
+        </div>      
+      </div>
+      <hr class="productRuler">
+    </div>
+    <!-- A single Product -->
+
+  </div>
+</div>
