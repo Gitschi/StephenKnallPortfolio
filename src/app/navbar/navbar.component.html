@@ -6,29 +6,29 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/">Home<span class="sr-only">(current)</span></a>
+        <li class="nav-item" [class.active]="languageService.activePage == 0">
+          <a class="nav-link" routerLink="/" [innerHTML]="languageService.displayIsEnglish ? 'Home' : 'ホーム'"></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/portfolio">Portfolio</a>
+        <li class="nav-item" [class.active]="languageService.activePage == 1">
+          <a class="nav-link" routerLink="/portfolio" [innerHTML]="languageService.displayIsEnglish ? 'Portfolio' : 'ポートフォリオ'"></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+        <li class="nav-item" [class.active]="languageService.activePage == 2">
+          <a class="nav-link" routerLink="/about" [innerHTML]="languageService.displayIsEnglish ? 'About' : '自己紹介'"></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+        <li class="nav-item" [class.active]="languageService.activePage == 3">
+          <a class="nav-link" routerLink="/contact" [innerHTML]="languageService.displayIsEnglish ? 'Contact' : '連絡'"></a>
         </li>
       </ul>
 
       <!-- Pull Right -->
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" (click)="SwitchToEnglish()">
             <img class="languageChange" src="https://res.cloudinary.com/knallcloud/image/upload/c_scale,q_100,w_100/v1539613553/Flags/FlagEnglish.jpg">
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" (click)="SwitchToJapanese()">
             <img class="languageChange" src="https://res.cloudinary.com/knallcloud/image/upload/c_scale,q_100,w_100/v1539613553/Flags/FlagJapan.jpg">
           </a>
         </li>

@@ -1,11 +1,3 @@
-.productContainer{
-  background-color: #132b5285;
-  width: 100%;
-  padding-bottom: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
 .portfolioThumbnail{
   width: 512px;
   max-width: 90%;
@@ -16,6 +8,10 @@
 .portfolioIntroText{
   color: white;
   margin: 20px;
+}
+
+.productName{
+  margin: 5px;
 }
 
 .toolLogos{

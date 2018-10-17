@@ -1,14 +1,15 @@
 <div class="container">
-  <div class="productContainer">
+  <div class="contentContainer">
 
     <!-- A single Product -->
     <div *ngFor="let product of products" class="singleProduct">
+      <h2 class="centered white productName" [innerHtml]="product.name"></h2>
       <div class="row">
         <div class="col-sm-12 col-xl-6">
           <img class="portfolioThumbnail" [src]="product.thumbnailPath">
         </div>
         <div class="col-sm-12 col-xl-6">
-          <p class="portfolioIntroText" [innerHtml]="product.introTextEN"></p>
+          <p class="portfolioIntroText" [innerHtml]="languageService.displayIsEnglish ? product.introTextEN : product.introTextJP"></p>
           <div class="toolLogos">
             <img *ngFor="let logo of product.toolLogos" class="toolLogo" [src]="logo.imagePath" [title]="logo.title">
           </div>

@@ -12,9 +12,9 @@ export class ProductService{
   ]
 
   introTextEN: string[] = [
-    "Arcade <b>Game</b> with retro theme; Made with <b>Unity</b> and released on <b>PC</b> and <b>Android</b>. Try to return the fruits to their bushes while avoiding falling blocks and obstacles. The difficulty will scale the longer the game goes on to keeps you on your toes!",
-    "SUPER Turbo Kanji let's gooooooo",
-    " All about the vr gamers booooot!"
+    "Arcade <b>Game</b> with retro theme; Try to return the fruits to their bushes while avoiding falling blocks and obstacles. The difficulty will scale the longer the game goes on to keeps you on your toes! Made with <b>Unity</b> and released on <b>PC</b> and <b>Android</b>.",
+    "We have all heard coined Japanese words such as <b>'Hadoken'</b> or <b>'Shoryuken'</b> before, but we mostly don't know what they really mean and even less how to write them in Kanji. This site teaches you how to leverage the Japanese knowledge you acquired through games and pop-culture, to become a master at <b>recognizing Kanji</b> and expanding your vocabulary.",
+    "A constantly active bot, made with the <b>Twitter API</b> to bring user created VR content together. Multiple filter functions make sure that the quality of the retweeted content is kept as high as possible, which also made this bot useful at work during my time as a social media marketing intern."
   ]
 
   introTextJP: string[] = [
@@ -52,7 +52,12 @@ export class ProductService{
     // Furry Gladiators GooglePlay
     {link: "https://play.google.com/store/apps/details?id=com.Studio208.FurryGladiators", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692127/PortfolioActionButtons/Button_GooglePlay.png"},
     // Github Vr GamersBot
-    {link: "https://github.com/Gitschi/VRGamersBot", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"}
+    {link: "https://github.com/Gitschi/VRGamersBot", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"},
+    // Super Turbo Kanji Visit Project
+    {link: "http://www.superturbokanji.com", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539767942/PortfolioActionButtons/Button_Project.png"},
+    // VR Gamers Bot Visit Project
+    {link: "https://twitter.com/vrgamersbot", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539767942/PortfolioActionButtons/Button_Project.png"}
+
   ]
 
   public products: Product[] = [
@@ -64,12 +69,12 @@ export class ProductService{
     new Product(
       "Super Turbo Kanji", this.thumbnailPath[1], this.introTextEN[1], this.introTextJP[1],
       [this.toolLogos[5], this.toolLogos[6], this.toolLogos[7], this.toolLogos[2], this.toolLogos[8], this.toolLogos[9]],
-      [this.actionButtons[0], this.actionButtons[1]]
+      [this.actionButtons[3]]
     ),
     new Product(
       "VR Gamers Bot", this.thumbnailPath[2], this.introTextEN[2], this.introTextJP[2],
       [this.toolLogos[7], this.toolLogos[2], this.toolLogos[9]],
-      [this.actionButtons[2]]
+      [this.actionButtons[4], this.actionButtons[2]]
     )    
   ]
 

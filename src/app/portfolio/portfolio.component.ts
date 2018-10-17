@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../services/product.service';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -11,9 +12,10 @@ export class PortfolioComponent implements OnInit {
 
   products = this.productService.GetProducts();
   
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, private languageService: LanguageService) { }
 
   ngOnInit() {
+    this.languageService.activePage = 1;
   }
 
 }

@@ -1,30 +1,14 @@
 <div class="container">
-  <div class="headLine white">
-      <h1>Stephen Knall</h1>
-      <h2>Software Engineer & Game Developer</h2>
+  <div class="headLine white centered">
+    <h1 [innerHTML]="languageService.displayIsEnglish ? textEnglish.name : textJapanese.name"></h1>
+    <h2 [innerHTML]="languageService.displayIsEnglish ? textEnglish.job : textJapanese.job"></h2>
   </div>
   <div class="centered white">
     <div class="row">
-        <div class="col-md-12 col-lg-6 introductionContainer">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra est nec lorem tincidunt,
-                et pulvinar nisi malesuada. Aenean non turpis ac nisi lacinia commodo semper sit amet neque. Nunc vitae
-                elementum odio. Cras sollicitudin ornare magna, in imperdiet eros volutpat quis. Vestibulum maximus
-                sagittis magna. 
-            </p>
-            <img src="https://res.cloudinary.com/knallcloud/image/upload/c_scale,q_100,w_100/v1539613553/Flags/FlagEnglish.jpg"><br>
-            <button class="btn btn-lg btn-warning">View Portfolio</button><br>
-            <button class="btn btn-lg btn-primary">About Me</button>
-        </div>
-        <div class="col-md-12 col-lg-6 introductionContainer">
-            <p>
-            供ルムミ断掌ねレっ国市カユタ親屯放96時ど独色ヤトテ別懇じほ来稿そ携更ほしり具取ち止広よ減戸せ投後
-            ばぱ客告をの純安ウ阪経きへ。彼ヘル細31識江択モヒルノ乳事サカ費仙イにょ他乏成ウトク乗試ホノフリ局
-            文てぶスル五攻ごきりめ月幕メフニ標加党善宇レぐくゆ。
-            </p>
-            <img src="https://res.cloudinary.com/knallcloud/image/upload/c_scale,q_100,w_100/v1539613553/Flags/FlagJapan.jpg"><br>
-            <button class="btn btn-lg btn-warning">ポートフォリオを見る</button><br>
-            <button class="btn btn-lg btn-primary">自己紹介</button>
+        <div class="introductionContainer">
+          <p [innerHTML]="languageService.displayIsEnglish ? textEnglish.welcome : textJapanese.welcome"></p>
+          <button class="btn btn-lg btn-warning homeButton" (click)="NavigatePortfolio()" [innerHTML]="languageService.displayIsEnglish ? textEnglish.portfolio : textJapanese.portfolio"></button>
+          <button class="btn btn-lg btn-primary homeButton" (click)="NavigateAbout()" [innerHTML]="languageService.displayIsEnglish ? textEnglish.about : textJapanese.about"></button>
         </div>
     </div>
   </div>

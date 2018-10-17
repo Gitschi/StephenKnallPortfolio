@@ -9,6 +9,9 @@ import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
 import { ProductService } from '../services/product.service';
+import { LanguageService } from '../services/language.service';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,17 +19,22 @@ import { ProductService } from '../services/product.service';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
-      {path: 'portfolio', component: PortfolioComponent}
+      {path: 'portfolio', component: PortfolioComponent},
+      {path: 'about', component: AboutComponent},
+      {path: 'contact', component: ContactComponent}
     ])
   ],
   providers: [
-    ProductService
+    ProductService,
+    LanguageService
   ],
   bootstrap: [AppComponent]
 })
