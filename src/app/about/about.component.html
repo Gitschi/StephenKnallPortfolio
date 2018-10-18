@@ -1,7 +1,28 @@
 <div class="container">
   <div class="contentContainer">
+
+    <!-- Upper Part -->
     <h1 class="white">About Me</h1>
     <img class="profilePicture" src="https://res.cloudinary.com/knallcloud/image/upload/v1539783915/ProfilePicture.png">
-    <p></p>
+    <div class="cvButtonContainer">
+      <a href="https://docs.google.com/document/d/1ubD3v2ssHGH4ABAVyBGCDXE8nDTArtlggfsg-OdLTOY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <button class="btn btn-lg btn-secondary cvButton" [innerHTML]="languageService.displayIsEnglish ? btnTextEnglish[0] : btnTextJapanese[0]"></button>
+      </a>
+      <a href="https://docs.google.com/spreadsheets/d/1y2TPNnDbUEmYo_eNa5KG_mRTe6-gQISQylHiN6r4lhc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <button class="btn btn-lg btn-secondary cvButton" [innerHTML]="languageService.displayIsEnglish ? btnTextEnglish[1] : btnTextJapanese[1]"></button>
+      </a>
+      <a href="https://docs.google.com/document/d/1LJGNUZKaYq38xRDyCd_hTf58W55MAPsdf7OnyXb0Hyw/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <button class="btn btn-lg btn-secondary cvButton" [innerHTML]="languageService.displayIsEnglish ? btnTextEnglish[2] : btnTextJapanese[2]"></button>
+      </a>
+    </div>
+    <!-- Upper Part -->
+
+    <!-- Lower Part -->
+    <div *ngFor="let aboutGroup of aboutGroups" class="aboutContent">
+      <h2 [innerHTML]="languageService.displayIsEnglish ? aboutGroup.headerEN : aboutGroup.headerJP"></h2>
+      <p class="boxParagraph"[innerHTML]="languageService.displayIsEnglish ? aboutGroup.paragraphEN : aboutGroup.paragraphJP"></p>
+      <img class="aboutImage" [src]="aboutGroup.imgPath">
+    </div>
+    <!-- Lower Part -->
   </div>
 </div>  

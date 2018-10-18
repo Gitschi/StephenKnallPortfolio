@@ -12,9 +12,9 @@ export class ProductService{
   ]
 
   introTextEN: string[] = [
-    "Arcade <b>Game</b> with retro theme; Try to return the fruits to their bushes while avoiding falling blocks and obstacles. The difficulty will scale the longer the game goes on to keeps you on your toes! Made with <b>Unity</b> and released on <b>PC</b> and <b>Android</b>.",
-    "We have all heard coined Japanese words such as <b>'Hadoken'</b> or <b>'Shoryuken'</b> before, but we mostly don't know what they really mean and even less how to write them in Kanji. This site teaches you how to leverage the Japanese knowledge you acquired through games and pop-culture, to become a master at <b>recognizing Kanji</b> and expanding your vocabulary.",
-    "A constantly active bot, made with the <b>Twitter API</b> to bring user created VR content together. Multiple filter functions make sure that the quality of the retweeted content is kept as high as possible, which also made this bot useful at work during my time as a social media marketing intern."
+    "Arcade <strong>Game</strong> with retro theme; Try to return the fruits to their bushes while avoiding falling blocks and obstacles. The difficulty will scale the longer the game goes on to keeps you on your toes! Made with <strong>Unity</strong> and released on <strong>PC</strong> and <strong>Android</strong>.",
+    "We have all heard coined Japanese words such as <strong>'Hadoken'</strong> or <strong>'Shoryuken'</strong> before, but we mostly don't know what they really mean and even less how to write them in Kanji. This site teaches you how to leverage the Japanese knowledge you acquired through games and pop-culture, to become a master at <strong>recognizing Kanji</strong> and expanding your vocabulary.",
+    "A constantly active bot, made with the <strong>Twitter API</strong> to bring user created VR content together. Multiple filter functions make sure that the quality of the retweeted content is kept as high as possible, which also made this bot useful at work during my time as a social media marketing intern."
   ]
 
   introTextJP: string[] = [
@@ -35,11 +35,11 @@ export class ProductService{
     // 4 Ionic
     {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539699205/PortfolioLogos/Logo_Ionic.png", title: "Ionic"},
     // 5 HTML
-    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539699808/PortfolioLogos/Logo_HTML.png", title: "HTML"},
+    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539861712/PortfolioLogos/Logo_html.png", title: "HTML"},
     // 6 CSS
-    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539699808/PortfolioLogos/Logo_CSS.png", title: "CSS"},
+    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539861712/PortfolioLogos/Logo_css.png", title: "CSS"},
     // 7 JavaScript
-    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539699808/PortfolioLogos/Logo_JavaScript.png", title: "JavaScript"},
+    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539861712/PortfolioLogos/Logo_Js.png", title: "JavaScript"},
     // 8 MongoDB
     {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539700297/PortfolioLogos/Logo_mongoDB.png", title: "MongoDB"},
     // 9 Heroku

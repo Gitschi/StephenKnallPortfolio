@@ -34,3 +34,7 @@ body{
 .white{
   color: white;
 }
+
+.boxParagraph{
+  padding: 10px 15%;
+}

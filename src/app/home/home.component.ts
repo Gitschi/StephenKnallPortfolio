@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
   }
 
   textJapanese: object = {
-    name: "Knall Stephen",
-    job: "ゲームプログラマ・ソフトウェアエンジニア",
+    name: "クナル　ステフェン",
+    job: "ゲームプログラマー・ソフトウェアエンジニア",
     welcome: "供ルムミ断掌ねレっ国市カユタ親屯放96時ど独色ヤトテ別懇じほ来稿そ携更ほしり具取ち止広よ減戸せ投後ばぱ客告をの純安ウ阪経きへ。彼ヘル細31識江択モヒルノ乳事サカ費仙イにょ他乏成ウトク乗試ホノフリ局文てぶスル五攻ごきりめ月幕メフニ標加党善宇レぐくゆ。",
     portfolio: "ポートフォリオを見る",
     about: "自己紹介"
