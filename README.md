@@ -1,4 +1,5 @@
-# Portfoliosite
+# Stephen Knall Portfolio
+Private Webpage hosted on here only to show the source code to people who are interested.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
