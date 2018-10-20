@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
 import { Router } from '../../../node_modules/@angular/router';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-home',
@@ -27,10 +28,15 @@ export class HomeComponent implements OnInit {
     about: "自己紹介"
   }
 
-  constructor(private languageService: LanguageService, private router: Router) { }
+  constructor(private languageService: LanguageService, private router: Router, private seoService: SeoService) { }
 
   ngOnInit() {
     this.languageService.activePage = 0;
+    this.seoService.createLinkForCanonicalURL();
+  }
+
+  ngOnDestroy(){
+    this.seoService.removeCanonicalTags();
   }
 
   NavigatePortfolio() {

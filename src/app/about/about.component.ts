@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-about',
@@ -44,10 +45,15 @@ export class AboutComponent implements OnInit {
     }
   ]
 
-  constructor(private languageService: LanguageService) { }
+  constructor(private languageService: LanguageService, private seoService: SeoService) { }
 
   ngOnInit() {
     this.languageService.activePage = 2;
+    this.seoService.createLinkForCanonicalURL();
+  }
+
+  ngOnDestroy(){
+    this.seoService.removeCanonicalTags();
   }
 
 }

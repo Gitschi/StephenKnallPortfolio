@@ -13,6 +13,7 @@ import { ProductService } from '../services/product.service';
 import { LanguageService } from '../services/language.service';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { SeoService } from '../services/seo.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AboutComponent } from './about/about.component';
   ],
   providers: [
     ProductService,
-    LanguageService
+    LanguageService,
+    SeoService
   ],
   bootstrap: [AppComponent]
 })

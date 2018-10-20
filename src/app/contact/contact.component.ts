@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-contact',
@@ -14,10 +15,15 @@ export class ContactComponent implements OnInit {
     "2020年3月卒業見込みですので、就活中です。貴社では私に適当な働き口空いていったらか、たったゲームやプログラミングについてお話したい場合ご連絡ください。現在フリーランスの依頼を受け取れません。"
   ]
 
-  constructor(private languageService: LanguageService) { }
+  constructor(private languageService: LanguageService, private seoService: SeoService) { }
 
   ngOnInit() {
     this.languageService.activePage = 3;
+    this.seoService.createLinkForCanonicalURL();
+  }
+
+  ngOnDestroy(){
+    this.seoService.removeCanonicalTags();
   }
 
 }

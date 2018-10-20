@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../services/product.service';
 import { LanguageService } from '../../services/language.service';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -12,10 +13,15 @@ export class PortfolioComponent implements OnInit {
 
   products = this.productService.GetProducts();
   
-  constructor(private productService: ProductService, private languageService: LanguageService) { }
+  constructor(private productService: ProductService, private languageService: LanguageService, private seoService: SeoService) { }
 
   ngOnInit() {
     this.languageService.activePage = 1;
+    this.seoService.createLinkForCanonicalURL();
+  }
+
+  ngOnDestroy(){
+    this.seoService.removeCanonicalTags();
   }
 
 }
