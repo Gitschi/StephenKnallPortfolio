@@ -1,20 +1,23 @@
 #navBarContainer{
   margin-bottom: 20px;
-  /* border-bottom: gray 1px solid; */
 }
 
 nav{
   padding: 5px 20% 5px 20%;
 }
 
-.navbar-line{ 
-  display:block;
-  border:none;
-  color:white;
-  height:1px;
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
+#languageMenu{
+  flex-direction: row !important;
+}
+
+.languageItem{
+  padding: 8px !important;
 }
 
 .languageChange{
   width: 50px;
+}
+
+.languageChange:hover{
+  cursor: pointer;
 }

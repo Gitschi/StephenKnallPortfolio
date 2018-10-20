@@ -5,12 +5,20 @@ body,html{
 }
 
 body{
-  background: linear-gradient(to bottom right, #2e3a4e, #71747ab4), url("https://res.cloudinary.com/gcloud1991/image/upload/v1510698237/6_-_Japan_-_9_Hakone_11_hvg0cw.jpg") no-repeat center; 
+  background: linear-gradient(to bottom right, #2e3a4e, #71747ab4), url("https://res.cloudinary.com/knallcloud/image/upload/v1540018400/PortfolioImages/BG_03.png") no-repeat center; 
   background-size: cover; 
   margin: 0;
   min-height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.horizontalLine{ 
+  display:block;
+  border:none;
+  color:white;
+  height:1px;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
 }
 
 .fullContainer{
@@ -24,7 +32,7 @@ body{
   padding: 20px 0;
   border-radius: 10px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 }
 
 .centered{
@@ -37,4 +45,27 @@ body{
 
 .boxParagraph{
   padding: 10px 15%;
+}
+
+.contactAnchor{
+  color: white;
+}
+
+.contactAnchor:hover{
+  color: gray;
+}
+
+.darken {
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+}
+
+.darken:hover {
+  filter: brightness(60%);
+  -webkit-filter: brightness(60%);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }

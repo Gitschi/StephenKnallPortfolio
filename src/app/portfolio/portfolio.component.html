@@ -1,8 +1,8 @@
 <div class="container">
-  <div class="contentContainer">
+  <div class="contentContainer largeContainer">
 
     <!-- A single Product -->
-    <div *ngFor="let product of products" class="singleProduct">
+    <div *ngFor="let product of products; let i = index" class="singleProduct">
       <h2 class="centered white productName" [innerHtml]="product.name"></h2>
       <div class="row">
         <div class="col-sm-12 col-xl-6">
@@ -16,13 +16,15 @@
         </div>
       </div>
       <div class="row">
-        <div class="actionLinks">
-          <a *ngFor="let actionButton of product.actionButtons" class="externalLink" target="_blank" rel="noopener noreferrer" [href]="actionButton.link">
-            <img class="linkImage" [src]="actionButton.imagePath">
-          </a>
+        <div class="actionLinks row">
+          <div *ngFor="let actionButton of product.actionButtons" class="actionLink col-sm-12 col-md-6"> 
+            <a class="externalLink" target="_blank" rel="noopener noreferrer" [href]="actionButton.link">
+              <img class="linkImage darken" [src]="actionButton.imagePath">
+            </a>          
+          </div>
         </div>      
       </div>
-      <hr class="productRuler">
+      <hr *ngIf="i < products.length -1" class="productRuler">
     </div>
     <!-- A single Product -->
 

@@ -1,10 +1,10 @@
 <div id="navBarContainer">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" (click)="ToggleNav()">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [class.show]="isExpanded">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item" [class.active]="languageService.activePage == 0">
           <a class="nav-link" routerLink="/" [innerHTML]="languageService.displayIsEnglish ? 'Home' : 'ホーム'"></a>
@@ -18,24 +18,23 @@
         <li class="nav-item" [class.active]="languageService.activePage == 3">
           <a class="nav-link" routerLink="/contact" [innerHTML]="languageService.displayIsEnglish ? 'Contact' : '連絡'"></a>
         </li>
-      </ul>
-
-      <!-- Pull Right -->
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" (click)="SwitchToEnglish()">
-            <img class="languageChange" src="https://res.cloudinary.com/knallcloud/image/upload/c_scale,q_100,w_100/v1539613553/Flags/FlagEnglish.jpg">
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" (click)="SwitchToJapanese()">
-            <img class="languageChange" src="https://res.cloudinary.com/knallcloud/image/upload/c_scale,q_100,w_100/v1539613553/Flags/FlagJapan.jpg">
-          </a>
-        </li>
-      </ul>
+      </ul> 
     </div>
-  </nav>
+      <!-- Pull Right -->
+      <ul class="navbar-nav ml-auto" id="languageMenu">
+        <li class="nav-item languageItem">
+          <a class="nav-link" (click)="SwitchToEnglish()">
+            <img class="languageChange darken" src="https://res.cloudinary.com/knallcloud/image/upload/c_scale,q_100,w_100/v1539613553/Flags/FlagEnglish.jpg">
+          </a>
+        </li>
+        <li class="nav-item languageItem">
+          <a class="nav-link" (click)="SwitchToJapanese()">
+            <img class="languageChange darken" src="https://res.cloudinary.com/knallcloud/image/upload/c_scale,q_100,w_100/v1539613553/Flags/FlagJapan.jpg">
+          </a>
+        </li>
+      </ul>
+  </nav>    
   <div>
-      <span class="navbar-line"></span>
+      <span class="horizontalLine"></span>
   </div>
 </div>

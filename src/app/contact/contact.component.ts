@@ -6,7 +6,13 @@ import { LanguageService } from '../../services/language.service';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
+
 export class ContactComponent implements OnInit {
+
+  contactText: string[] = [
+    "Graduating game development college in 2020 and looking for a position as a Game programmer in Tokyo. If you are looking to hire me or just want to have a chat, feel free to hit me up. Currently not taking requests for freelance work.",
+    "2020年3月卒業見込みですので、就活中です。貴社では私に適当な働き口空いていったらか、たったゲームやプログラミングについてお話したい場合ご連絡ください。現在フリーランスの依頼を受け取れません。"
+  ]
 
   constructor(private languageService: LanguageService) { }
 

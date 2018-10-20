@@ -1,12 +1,13 @@
 <div class="container">
   <div class="headLine white centered">
-    <h1 [innerHTML]="languageService.displayIsEnglish ? textEnglish.name : textJapanese.name"></h1>
+    <h1 [innerHTML]="languageService.displayIsEnglish ? textEnglish.firstName : textJapanese.firstName"></h1>
+    <h1 [innerHTML]="languageService.displayIsEnglish ? textEnglish.secondName : textJapanese.secondName"></h1>
     <h2 [innerHTML]="languageService.displayIsEnglish ? textEnglish.job : textJapanese.job"></h2>
   </div>
   <div class="centered white">
     <div class="row">
         <div class="introductionContainer">
-          <p [innerHTML]="languageService.displayIsEnglish ? textEnglish.welcome : textJapanese.welcome"></p>
+          <p class="welcomeText" [innerHTML]="languageService.displayIsEnglish ? textEnglish.welcome : textJapanese.welcome"></p>
           <button class="btn btn-lg btn-warning homeButton" (click)="NavigatePortfolio()" [innerHTML]="languageService.displayIsEnglish ? textEnglish.portfolio : textJapanese.portfolio"></button>
           <button class="btn btn-lg btn-primary homeButton" (click)="NavigateAbout()" [innerHTML]="languageService.displayIsEnglish ? textEnglish.about : textJapanese.about"></button>
         </div>

@@ -6,11 +6,19 @@ import { LanguageService } from '../../services/language.service';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
+
 export class NavbarComponent implements OnInit {
+
+  isExpanded: boolean;
 
   constructor(private languageService: LanguageService) { }
 
   ngOnInit() {
+    this.isExpanded = false;
+  }
+
+  ToggleNav(){
+    this.isExpanded = !this.isExpanded;
   }
 
   SwitchToEnglish(){

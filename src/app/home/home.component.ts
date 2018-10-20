@@ -10,17 +10,19 @@ import { Router } from '../../../node_modules/@angular/router';
 export class HomeComponent implements OnInit {
 
   textEnglish: object = {
-    name: "Stephen Knall",
+    firstName: "Stephen",
+    secondName: "Knall",
     job: "Game Programmer & Software Engineer",
-    welcome: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra est nec lorem tincidunt, et pulvinar nisi malesuada. Aenean non turpis ac nisi lacinia commodo semper sit amet neque. Nunc vitae, elementum odio. Cras sollicitudin ornare magna, in imperdiet eros volutpat quis. Vestibulum maximussagittis magna.",
+    welcome: "I am a Tokyo based Software Engineer who is well versed in many facettes of programming, with a main focus on game programming and full-stack web development. Having spent multiple years living in China and Japan has given me a chance to experience enourmous personal growth and work on many projects with people from different backgrounds.",
     portfolio: "View Portfolio",
     about: "About Me"
   }
 
   textJapanese: object = {
-    name: "クナル　ステフェン",
+    firstName: "クナル",
+    secondName: "ステフェン",
     job: "ゲームプログラマー・ソフトウェアエンジニア",
-    welcome: "供ルムミ断掌ねレっ国市カユタ親屯放96時ど独色ヤトテ別懇じほ来稿そ携更ほしり具取ち止広よ減戸せ投後ばぱ客告をの純安ウ阪経きへ。彼ヘル細31識江択モヒルノ乳事サカ費仙イにょ他乏成ウトク乗試ホノフリ局文てぶスル五攻ごきりめ月幕メフニ標加党善宇レぐくゆ。",
+    welcome: "プログラミングの複数の面の経験があり、特にはゲームプログラミングとフルスタックWEBエンジニアリングが熱中です。数年中国や日本に住んだことあるため、違う歴史がある人々と協力して色々のプロジェクトを完成できました。",
     portfolio: "ポートフォリオを見る",
     about: "自己紹介"
   }
