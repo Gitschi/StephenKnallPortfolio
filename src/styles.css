@@ -8,9 +8,9 @@ body,html{
 body{
   background: linear-gradient(to bottom right, #2e3a4e, #71747ab4), url("https://res.cloudinary.com/knallcloud/image/upload/v1540018400/PortfolioImages/BG_03.png") no-repeat center center fixed; 
   background-size: cover; 
-  overflow: hidden;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: auto;
 }
 
 .horizontalLine{ 
