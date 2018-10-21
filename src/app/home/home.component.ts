@@ -10,7 +10,7 @@ import { SeoService } from '../../services/seo.service';
 })
 export class HomeComponent implements OnInit {
 
-  textEnglish: object = {
+  textEnglish = {
     firstName: "Stephen",
     secondName: "Knall",
     job: "Game Programmer & Software Engineer",
@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
     about: "About Me"
   }
 
-  textJapanese: object = {
+  textJapanese = {
     firstName: "クナル",
     secondName: "ステフェン",
     job: "ゲームプログラマー・ソフトウェアエンジニア",
@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
     about: "自己紹介"
   }
 
-  constructor(private languageService: LanguageService, private router: Router, private seoService: SeoService) { }
+  constructor(public languageService: LanguageService, private router: Router, private seoService: SeoService) { }
 
   ngOnInit() {
     this.languageService.activePage = 0;

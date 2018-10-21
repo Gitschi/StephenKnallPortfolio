@@ -15,7 +15,7 @@ export class ContactComponent implements OnInit {
     "2020年3月卒業見込みですので、就活中です。貴社では私に適当な働き口空いていったらか、たったゲームやプログラミングについてお話したい場合ご連絡ください。現在フリーランスの依頼を受け取れません。"
   ]
 
-  constructor(private languageService: LanguageService, private seoService: SeoService) { }
+  constructor(public languageService: LanguageService, private seoService: SeoService) { }
 
   ngOnInit() {
     this.languageService.activePage = 3;

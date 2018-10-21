@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
 
   isExpanded: boolean;
 
-  constructor(private languageService: LanguageService) { }
+  constructor(public languageService: LanguageService) { }
 
   ngOnInit() {
     this.isExpanded = false;

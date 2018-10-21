@@ -45,7 +45,7 @@ export class AboutComponent implements OnInit {
     }
   ]
 
-  constructor(private languageService: LanguageService, private seoService: SeoService) { }
+  constructor(public languageService: LanguageService, private seoService: SeoService) { }
 
   ngOnInit() {
     this.languageService.activePage = 2;
