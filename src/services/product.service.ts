@@ -48,7 +48,9 @@ export class ProductService{
     // 9 Heroku
     {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539701620/PortfolioLogos/Logo_Heroku.png", title: "Heroku"},
     // 10 Typescript
-    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1540017489/PortfolioLogos/Logo_Typescript.png", title: "TypeScript"}
+    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1540017489/PortfolioLogos/Logo_Typescript.png", title: "TypeScript"},
+    // 11 Netlify
+    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1540082702/PortfolioLogos/Logo_Netlifiy.png", title: "Netlify"}
   ]
   
   actionButtons: Object[] = [
@@ -84,7 +86,7 @@ export class ProductService{
     ),
     new Product(
       "Portfolio Website", this.thumbnailPath[3], this.introTextEN[3], this.introTextJP[3],
-      [this.toolLogos[10], this.toolLogos[3], this.toolLogos[9]],
+      [this.toolLogos[10], this.toolLogos[3], this.toolLogos[11]],
       [this.actionButtons[5]]
     )    
   ]
