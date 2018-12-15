@@ -10,7 +10,8 @@ export class ProductService{
     "https://res.cloudinary.com/knallcloud/image/upload/v1539702253/PortfolioImages/SuperTurboKanji.jpg",
     "https://res.cloudinary.com/knallcloud/image/upload/v1539702255/PortfolioImages/VRGamersBot.jpg",
     "https://res.cloudinary.com/knallcloud/image/upload/v1540019996/PortfolioImages/PortfolioBanner.png",
-    "https://res.cloudinary.com/knallcloud/image/upload/v1541829915/PortfolioImages/SoulFrames_Banner.jpg"
+    "https://res.cloudinary.com/knallcloud/image/upload/v1541829915/PortfolioImages/SoulFrames_Banner.jpg",
+    "https://res.cloudinary.com/knallcloud/image/upload/v1544884024/PortfolioImages/strandedtypist.jpg"
   ]
 
   introTextEN: string[] = [
@@ -18,7 +19,8 @@ export class ProductService{
     "We have all heard coined Japanese words such as <strong>'Hadoken'</strong> or <strong>'Shoryuken'</strong> before, but we mostly don't know what they really mean and even less how to write them in Kanji. This site teaches you how to leverage the Japanese knowledge you acquired through games and pop-culture, to become a master at <strong>recognizing Kanji</strong> and expanding your vocabulary.",
     "A constantly active bot, made with the <strong>Twitter API</strong> to bring user created VR content together. Multiple filter functions make sure that the quality of the retweeted content is kept as high as possible, which also made this bot useful at work during my time as a social media marketing intern.",
     "The website you are currently on is a <strong>Single Page Application</strong> which allows for dynamic navigation and language change through the power of <strong>Angular</strong>. It will function as a hub for all my programming related projects and will be constantly updated. You can have a look at the source code, which is hosted on Github, through the link below.",
-    "Move list and frame data application for the game <strong>Soul Calibur 6</strong>. When playing fighting games in a competetive manner many players choose to learn the frame timings of each characters attacks to gain an edge. This app has a multitude of filter functions to help you quickly find exactly what moves you are looking for and support you in your training. "
+    "Move list and frame data application for the game <strong>Soul Calibur 6</strong>. When playing fighting games in a competetive manner many players choose to learn the frame timings of each characters attacks to gain an edge. This app has a multitude of filter functions to help you quickly find exactly what moves you are looking for and support you in your training.",
+    "On rails <strong>Typing Game</strong> created with <strong>Unity Engine</strong>, which is highly influenced by classic titles such as <strong>Typing of the Dead</strong>. Put your typing skills to the test in Arcade Mode, Speed Mode or Miss Mode. In each mode the length of the appearing words can be adjusted to fit your skill level and help you grow as a typist."
   ]
 
   introTextJP: string[] = [
@@ -26,7 +28,8 @@ export class ProductService{
     "波動拳や昇竜拳みたいな造語がゲームをプレイ中に何回も聞きます。日本語を勉強している海外の方を対象に、その慣れはどうやって学習のための武器にすることができるを教えるウエブサイト。ゲーム造語の漢字を分析して、日常でも役に立つ、同じ漢字を使っている単語を紹介する。楽しくて自然の勉強方で漢字の知識を極めよう。",
     "VRゲーマーズのために作った、現実継続的にアクティブなTwitterボット。指定されたハッシュタグで望ましいコンテンツをみつけて、リツイートすることでVRゲームコンテンツのハブになった。搭載されたアルゴリズムでスパムやクオリティーが低いコンテンツを判断して、無視する。SNSマーケティングのインターンシップでもこのボットのおかげで色々の過程を自動した。",
     "このポートフォリオウエブサイトは、Angularの力で動的に言語を変えることができて、リーロードなしにナビゲーションができるシングルページアプリケーション。継続的に更新される、私が完成させたプログラミングプロジェクトのハブ。Githubにアップロードしているソースコードが下のリンクでアクセスできる。",
-    "ソールキャリバー６の技表やフレーム表アプリケーション。多くの格闘ゲームプレイヤーはスキルアップのために、キャラクターの動作のフレームタイミングを覚えないといけない。このアプリでは色々なフィルターを用いて、気になる技のタイミングを覚えるための武器になる。"
+    "ソールキャリバー６の技表やフレーム表アプリケーション。多くの格闘ゲームプレイヤーはスキルアップのために、キャラクターの動作のフレームタイミングを覚えないといけない。このアプリでは色々なフィルターを用いて、気になる技のタイミングを覚えるための武器になる。",
+    "ユニティーエンジンで作られた、クラシックのアーケードゲームに影響されたタイピングゲーム。単語の長さは自由に選ぶことができて、簡単に楽しみながらタイピングの腕をあげよう。アーケードモード、スピードモードとミスモードで三つのゲームモードがあるため、色々な楽しみかたがある。"
   ]
 
   toolLogos: Object[] = [
@@ -70,11 +73,19 @@ export class ProductService{
     // 5 Github Portfolio Page
     {link: "https://github.com/Gitschi/StephenKnallPortfolio", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"},
     // 6 Soul Frames GooglePlay
-    {link: "https://play.google.com/store/apps/details?id=com.studio208.soulframes", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692127/PortfolioActionButtons/Button_GooglePlay.png"}
-
+    {link: "https://play.google.com/store/apps/details?id=com.studio208.soulframes", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692127/PortfolioActionButtons/Button_GooglePlay.png"},
+    // 7 Stranded Typist Gamejolt
+    {link: "https://gamejolt.com/games/stranded-typist/384891", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Gamejolt.png"},
+    // 8 Stranded Typist Github
+    {link: "https://github.com/Gitschi/Stranded-Typist-Scripts/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"},
   ]
 
   public products: Product[] = [
+    new Product(
+      "Stranded Typist", this.thumbnailPath[5], this.introTextEN[5], this.introTextJP[5],
+      [this.toolLogos[0], this.toolLogos[1], this.toolLogos[7]],
+      [this.actionButtons[7], this.actionButtons[8]]
+    ),
     new Product(
       "Soul Frames", this.thumbnailPath[4], this.introTextEN[4], this.introTextJP[4],
       [this.toolLogos[10], this.toolLogos[3], this.toolLogos[4]],
@@ -99,7 +110,7 @@ export class ProductService{
       "Portfolio Website", this.thumbnailPath[3], this.introTextEN[3], this.introTextJP[3],
       [this.toolLogos[10], this.toolLogos[3], this.toolLogos[11]],
       [this.actionButtons[5]]
-    )    
+    ),
   ]
 
   GetProducts(){
