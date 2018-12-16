@@ -78,6 +78,8 @@ export class ProductService{
     {link: "https://gamejolt.com/games/stranded-typist/384891", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Gamejolt.png"},
     // 8 Stranded Typist Github
     {link: "https://github.com/Gitschi/Stranded-Typist-Scripts/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"},
+    // 9 Furry Gladiators Github
+    {link: "https://github.com/Gitschi/Furry-Gladiators-Scripts/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"}
   ]
 
   public products: Product[] = [
@@ -94,7 +96,7 @@ export class ProductService{
     new Product(
       "Furry Gladiators", this.thumbnailPath[0], this.introTextEN[0], this.introTextJP[0],
       [this.toolLogos[0], this.toolLogos[1]],
-      [this.actionButtons[0], this.actionButtons[1]]
+      [this.actionButtons[0], this.actionButtons[1], this.actionButtons[9]]
     ),
     new Product(
       "Super Turbo Kanji", this.thumbnailPath[1], this.introTextEN[1], this.introTextJP[1],

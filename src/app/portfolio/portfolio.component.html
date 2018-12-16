@@ -15,7 +15,6 @@
           </div>
         </div>
       </div>
-      <div class="row">
         <div class="actionLinks">
           <div *ngFor="let actionButton of product.actionButtons" class="actionLink"> 
             <a class="externalLink" target="_blank" rel="noopener noreferrer" [href]="actionButton.link">
@@ -23,7 +22,6 @@
             </a>          
           </div>
         </div>      
-      </div>
       <hr *ngIf="i < products.length -1" class="productRuler">
     </div>
     <!-- A single Product -->
