@@ -25,7 +25,10 @@
 
 .actionLinks{
   margin: auto;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding-bottom: 10px;
 }
 

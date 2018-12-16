@@ -16,8 +16,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="actionLinks row">
-          <div *ngFor="let actionButton of product.actionButtons" class="actionLink col-sm-12 col-md-6"> 
+        <div class="actionLinks">
+          <div *ngFor="let actionButton of product.actionButtons" class="actionLink"> 
             <a class="externalLink" target="_blank" rel="noopener noreferrer" [href]="actionButton.link">
               <img class="linkImage darken" [src]="actionButton.imagePath">
             </a>          
