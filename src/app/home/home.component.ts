@@ -4,7 +4,8 @@ import { Router } from '../../../node_modules/@angular/router';
 import { SeoService } from '../../services/seo.service';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-home',  
+  host: { class:'content' },
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

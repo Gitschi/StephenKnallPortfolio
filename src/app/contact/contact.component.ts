@@ -4,6 +4,7 @@ import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-contact',
+  host: { class:'content' },
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
