@@ -10,7 +10,7 @@ export class ProductService{
     "https://res.cloudinary.com/knallcloud/image/upload/v1539702253/PortfolioImages/SuperTurboKanji.jpg",
     "https://res.cloudinary.com/knallcloud/image/upload/v1539702255/PortfolioImages/VRGamersBot.jpg",
     "https://res.cloudinary.com/knallcloud/image/upload/v1540019996/PortfolioImages/PortfolioBanner.png",
-    "https://res.cloudinary.com/knallcloud/image/upload/v1541829915/PortfolioImages/SoulFrames_Banner.jpg",
+    "https://res.cloudinary.com/knallcloud/image/upload/v1545351304/PortfolioImages/soulframes_banner.png",
     "https://res.cloudinary.com/knallcloud/image/upload/v1544884024/PortfolioImages/strandedtypist.jpg"
   ]
 
