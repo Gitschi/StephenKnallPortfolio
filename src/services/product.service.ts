@@ -84,32 +84,32 @@ export class ProductService{
 
   public products: Product[] = [
     new Product(
-      "Stranded Typist", this.thumbnailPath[5], this.introTextEN[5], this.introTextJP[5],
+      "Stranded Typist", "stranded-typist", this.thumbnailPath[5], this.introTextEN[5], this.introTextJP[5],
       [this.toolLogos[0], this.toolLogos[1], this.toolLogos[7]],
       [this.actionButtons[7], this.actionButtons[8]]
     ),
     new Product(
-      "Soul Frames", this.thumbnailPath[4], this.introTextEN[4], this.introTextJP[4],
+      "Soul Frames", "soul-frames", this.thumbnailPath[4], this.introTextEN[4], this.introTextJP[4],
       [this.toolLogos[10], this.toolLogos[3], this.toolLogos[4]],
       [this.actionButtons[6]]
     ),
     new Product(
-      "Furry Gladiators", this.thumbnailPath[0], this.introTextEN[0], this.introTextJP[0],
+      "Furry Gladiators", "furry-gladiators", this.thumbnailPath[0], this.introTextEN[0], this.introTextJP[0],
       [this.toolLogos[0], this.toolLogos[1]],
       [this.actionButtons[0], this.actionButtons[1], this.actionButtons[9]]
     ),
     new Product(
-      "Super Turbo Kanji", this.thumbnailPath[1], this.introTextEN[1], this.introTextJP[1],
+      "Super Turbo Kanji", "super-turbo-kanji", this.thumbnailPath[1], this.introTextEN[1], this.introTextJP[1],
       [this.toolLogos[5], this.toolLogos[6], this.toolLogos[7], this.toolLogos[2], this.toolLogos[8], this.toolLogos[9]],
       [this.actionButtons[3]]
     ),
     new Product(
-      "VR Gamers Bot", this.thumbnailPath[2], this.introTextEN[2], this.introTextJP[2],
+      "VR Gamers Bot", "vr-gamers-bot", this.thumbnailPath[2], this.introTextEN[2], this.introTextJP[2],
       [this.toolLogos[7], this.toolLogos[2], this.toolLogos[9]],
       [this.actionButtons[4], this.actionButtons[2]]
     ),
     new Product(
-      "Portfolio Website", this.thumbnailPath[3], this.introTextEN[3], this.introTextJP[3],
+      "Portfolio Website", "portfolio-website", this.thumbnailPath[3], this.introTextEN[3], this.introTextJP[3],
       [this.toolLogos[10], this.toolLogos[3], this.toolLogos[11]],
       [this.actionButtons[5]]
     ),
