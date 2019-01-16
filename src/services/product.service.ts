@@ -16,22 +16,36 @@ export class ProductService{
   ]
 
   introTextEN: string[] = [
+    // 0: Furry Gladiators
     "Arcade Game made with <strong>Unity Engine</strong>, downloaded <strong>500+ times</strong> across <strong>PC</strong> and <strong>Android Devices</strong>. Aiming to create a reflex based game which feels <strong>'Hard but Fair'</strong>, adjusting game balance by receiving and implementing user feedback played a huge role. A big challenge I had to overcome was building the project for <strong>different devices and platforms from the same code base</strong>.",
+    // 1: Super Turbo Kanji
     "My <strong>first website</strong> and large scale solo project, which allowed me to combine my love for language studies, fighting games and web development. It introduces a more fun and unconventional way of <strong>memorizing Japanese kanji</strong> by breaking down coined words from fighting games, such as 'Hadoken' and 'Shoryuken' most of us have heard before. <strong>Node.js with the express framework</strong> was used for routing and communicating to <strong>MongoDB</strong>.",
+    // 2: VR Gamers Bot
     "Active <strong>Retweet Bot</strong> created using the <strong>Twitter API</strong> and <strong>JavaScript</strong> to be a hub for user created VR gaming content. I actively used this bot to optimize certain tasks during my time doing social media marketing for <strong>Swords of Gargantua</strong>, which is why I was fixated on implementing many filter functions to make sure only high quality content gets retweeted.",
+    // 3: Portfolio Website
     "The website you are currently viewing is a <strong>Single Page Application</strong> allowing dynamic navigation and language change through the power of <strong>Angular</strong>. The source code, which is hosted on Github, can be viewed through the link below.",
+    // 4: Soul Frames
     "<strong>Frame Data Application</strong> for the fighting game <strong>Soul Calibur 6</strong>. It has reached <strong>1000+ downloads</strong> to date and gained great support from the competitive community. After starting as a solo project, a couple of developers have joined following the beta release, which lead to me also assuming a <strong>project management role</strong>, setting project standards and creating technical documentation.",
+    // 5: Stranded Typist
     "Created with <strong>Unity Engine</strong>, this is a on rails <strong>Typing Game</strong> highly influenced by classic titles such as <strong>Typing of the Dead</strong>. <strong>Multiple game modes</strong>, <strong>adjustable difficulty</strong> and over <strong>200,000 words</strong> increase replay value and impact on the players typing skill. Knowledge I reinforced through this project covers the following: handling large amounts of text data, managing game objects in lists, creating waypoint and spawn systems.",
+    // 6: Furpunk Blast
     "Co-Op Twin Stick Shooter with a strong emphasis on teamwork. This <strong>group project</strong> was created using <strong>Unreal Engine 4</strong> with a team of 13 students. As the <strong>Lead Programmer</strong> I was responsible for <strong>heading a team of 5 programmers</strong>, <strong>repository management using git</strong>, <strong>technical guidance</strong>, <strong>gameplay implementation</strong> and much more."
   ]
 
   introTextJP: string[] = [
-    "パソコンやアンドロイドにリリースしたアーケードスタイルゲーム。目的は落下物をよけながら、フルーツを分別してブッシュに戻すこと。時間が経つと落下物の生成時間短くなるので、高いスコアを取るため気をつけてください。",
-    "波動拳や昇竜拳みたいな造語がゲームをプレイ中に何回も聞きます。日本語を勉強している海外の方を対象に、その慣れはどうやって学習のための武器にすることができるを教えるウエブサイト。ゲーム造語の漢字を分析して、日常でも役に立つ、同じ漢字を使っている単語を紹介する。楽しくて自然の勉強方で漢字の知識を極めよう。",
-    "VRゲーマーズのために作った、現実継続的にアクティブなTwitterボット。指定されたハッシュタグで望ましいコンテンツをみつけて、リツイートすることでVRゲームコンテンツのハブになった。搭載されたアルゴリズムでスパムやクオリティーが低いコンテンツを判断して、無視する。SNSマーケティングのインターンシップでもこのボットのおかげで色々の過程を自動した。",
-    "このポートフォリオウエブサイトは、Angularの力で動的に言語を変えることができて、リーロードなしにナビゲーションができるシングルページアプリケーション。継続的に更新される、私が完成させたプログラミングプロジェクトのハブ。Githubにアップロードしているソースコードが下のリンクでアクセスできる。",
-    "ソールキャリバー６の技表やフレーム表アプリケーション。多くの格闘ゲームプレイヤーはスキルアップのために、キャラクターの動作のフレームタイミングを覚えないといけない。このアプリでは色々なフィルターを用いて、気になる技のタイミングを覚えるための武器になる。",
-    "ユニティーエンジンで作られた、クラシックのアーケードゲームに影響されたタイピングゲーム。単語の長さは自由に選ぶことができて、簡単に楽しみながらタイピングの腕をあげよう。アーケードモード、スピードモードとミスモードで三つのゲームモードがあるため、色々な楽しみかたがある。",
+    // 0: Furry Gladiators
+    "パソコンとアンドロイド番を含めて５００回以上ダウンロードされたユニティ反射神経ゲームです。このジャンルでは難易度調整や操作の調整が最も大事なので、SNSでユーザと繋がってフィードバックで改善を行いました。特にはチャレンジでしたのは同じコードベースから複数のプラットフォームや画面サイズが対応する実行ファイルをビルトすることです。",
+    // 1: Super Turbo Kanji
+    "始めての規模が大きいな、語学や格闘ゲームやプログラミングに対しての興味を結び付けたプロジェクトです。普通の漢字勉強方法と違って、格闘ゲームの用語を例にして漢字が勉強できる作ったウエブサイトです。バックエンドがNode.jsやExpress Frameworkを使ってルーティングやMongoDBのデータベースとのやり取りを行っています。",
+    // 2: VR Gamers Bot
+    "VRゲーマーのために作った400以上のフォロワーを集まったアクティブなリツイートボットです。TwitterのAPIを使用して、指定されたハッシュタグで望ましいコンテンツをみつけて、リツイートすることでVRゲームコンテンツのハブなりました。アルゴリズムでスパムやクオリティーが低いコンテンツを判断して、無視します。VRゲーム会社でSNSマーケティングのバイトをした頃色々な過程を自動化するために使用しました。",
+    // 3: Portfolio Website
+    "このポートフォリオウエブサイトは、Angularの力で動的に言語を変えることができて、リーロードせずにナビゲーションができるシングルページアプリケーションです。継続的に更新される、私が完成させたプログラミングプロジェクトのハブです。Githubにアップロードしているソースコードが下のリンクでアクセスできます。",
+    // 4: Soul Frames
+    "ソールキャリバー６の1000回以上ダウンロードされたフレーム表アンドロイドアプリケーションです。ソロプロジェクトで始まったが、ベター版のリリースから複数の貢献者が参加するようになりました。あの時からリーダの役割を担当して、リポジトリの基準を決めてテクニカルドキュメントを書いています。準備したDiscordサーバーやアプリのツイッターアカウントでユーザのやり取りで改善やバグ直しを行っています。",
+    // 5: Stranded Typist
+    "ユニティーエンジンを使用して制作した、PCのレールシュータータイピングゲームです。複数のゲームモードと難易度の上に20万の言葉のワードリストを搭載されたため、リプレイバリューがあり、プレイヤーのタイピングの腕をあがります。このプロジェクトで乗り越えたチャレンジが、多くのテキストデータの処理やゲームオブジェクトをリストでの複雑の扱いやウェイポイントと生成システムの制作です。",
+    // 6: Furpunk Blast
     "Unreal Engine 4を作って制作された、協力アクションツインスティックシューティングゲーム。メインプログラマーとしてゲームプレイ実装の上に、プログラマー５人のチームを指導、gitを使用してレポジトリーの管理、技術的なガイダンスなどを担当しました。"
   ]
 

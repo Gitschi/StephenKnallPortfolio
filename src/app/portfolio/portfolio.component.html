@@ -2,7 +2,7 @@
   <div class="contentContainer largeContainer">
 
     <!-- A single Product -->
-    <div *ngFor="let product of products; let i = index" class="singleProduct" [id]="product.id">
+    <div *ngFor="let product of products; let i = index" class="singleProduct fadeSlideBottom" [id]="product.id">
       <h2 class="centered white productName" [innerHtml]="product.name"></h2>
       <div class="row">
         <div class="col-sm-12 col-xl-6">
