@@ -98,7 +98,9 @@ export class ProductService{
     // 8 Stranded Typist Github
     {link: "https://github.com/Gitschi/Stranded-Typist-Scripts/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"},
     // 9 Furry Gladiators Github
-    {link: "https://github.com/Gitschi/Furry-Gladiators-Scripts/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"}
+    {link: "https://github.com/Gitschi/Furry-Gladiators-Scripts/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"},
+    // 10 Soul Frames Github
+    {link: "https://github.com/Gitschi/SoulFrames", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"}
   ]
 
   public products: Product[] = [
@@ -108,19 +110,19 @@ export class ProductService{
       []
     ),
     new Product(
-      "Stranded Typist", "stranded-typist", this.thumbnailPath[5], this.introTextEN[5], this.introTextJP[5],
-      [this.toolLogos[0], this.toolLogos[1]],
-      [this.actionButtons[7], this.actionButtons[8]]
-    ),
-    new Product(
       "Soul Frames", "soul-frames", this.thumbnailPath[4], this.introTextEN[4], this.introTextJP[4],
       [this.toolLogos[10], this.toolLogos[3], this.toolLogos[4]],
-      [this.actionButtons[6]]
+      [this.actionButtons[6], this.actionButtons[10]]
     ),
     new Product(
       "Furry Gladiators", "furry-gladiators", this.thumbnailPath[0], this.introTextEN[0], this.introTextJP[0],
       [this.toolLogos[0], this.toolLogos[1]],
       [this.actionButtons[0], this.actionButtons[1], this.actionButtons[9]]
+    ),
+    new Product(
+      "Stranded Typist", "stranded-typist", this.thumbnailPath[5], this.introTextEN[5], this.introTextJP[5],
+      [this.toolLogos[0], this.toolLogos[1]],
+      [this.actionButtons[7], this.actionButtons[8]]
     ),
     new Product(
       "Super Turbo Kanji", "super-turbo-kanji", this.thumbnailPath[1], this.introTextEN[1], this.introTextJP[1],
