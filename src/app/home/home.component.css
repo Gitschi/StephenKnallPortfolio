@@ -14,10 +14,14 @@
   font-size: 70px;
 }
 
-.introductionContainer{
-  width: 60%;
-  margin: 50px auto;
+.homeContainer{
   padding-bottom: 40px;
+}
+
+.introductionContainer{
+  text-align: center;
+  margin: 50px auto;
+  width: 60%;
 }
 
 .welcomeText{

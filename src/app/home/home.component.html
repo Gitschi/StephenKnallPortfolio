@@ -6,8 +6,10 @@
   </div>
   <div class="centered white">
     <div class="row">
-        <div class="introductionContainer">
-          <p class="welcomeText" [innerHTML]="languageService.displayIsEnglish ? textEnglish.welcome : textJapanese.welcome"></p>
+        <div class="homeContainer">
+          <div class="introductionContainer">
+            <p class="welcomeText" [innerHTML]="languageService.displayIsEnglish ? textEnglish.welcome : textJapanese.welcome"></p>
+          </div>
           <button class="btn btn-lg btn-warning homeButton growShrink" (click)="NavigatePortfolio()" [innerHTML]="languageService.displayIsEnglish ? textEnglish.portfolio : textJapanese.portfolio"></button>
           <button class="btn btn-lg btn-primary homeButton" (click)="NavigateAbout()" [innerHTML]="languageService.displayIsEnglish ? textEnglish.about : textJapanese.about"></button>
         </div>
