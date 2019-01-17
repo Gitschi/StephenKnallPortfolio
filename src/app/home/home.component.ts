@@ -42,9 +42,13 @@ export class HomeComponent implements OnInit {
 
   NavigatePortfolio() {
     this.router.navigateByUrl('/portfolio');
+    //scroll to top of page
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
   NavigateAbout() {
     this.router.navigateByUrl('/about');
+    //scroll to top of page
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 }
