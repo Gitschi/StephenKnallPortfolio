@@ -12,7 +12,8 @@ export class ProductService{
     "https://res.cloudinary.com/knallcloud/image/upload/v1540019996/PortfolioImages/PortfolioBanner.png",
     "https://res.cloudinary.com/knallcloud/image/upload/v1545351304/PortfolioImages/soulframes_banner.png",
     "https://res.cloudinary.com/knallcloud/image/upload/v1544884024/PortfolioImages/strandedtypist.jpg",
-    "https://res.cloudinary.com/knallcloud/image/upload/v1547551142/PortfolioImages/Furpunk_Blast.jpg"
+    "https://res.cloudinary.com/knallcloud/image/upload/v1547551142/PortfolioImages/Furpunk_Blast.jpg",
+    "https://res.cloudinary.com/knallcloud/image/upload/v1548584381/PortfolioImages/BlockMatchLogo.jpg"
   ]
 
   introTextEN: string[] = [
@@ -29,7 +30,9 @@ export class ProductService{
     // 5: Stranded Typist
     "Created with <strong>Unity Engine</strong>, this is a on rails <strong>Typing Game</strong> highly influenced by classic titles such as <strong>Typing of the Dead</strong>. <strong>Multiple game modes</strong>, <strong>adjustable difficulty</strong> and over <strong>200,000 words</strong> increase replay value and impact on the players typing skill. Knowledge I reinforced through this project covers the following: handling large amounts of text data, managing game objects in lists, creating waypoint and spawn systems.",
     // 6: Furpunk Blast
-    "Co-Op Twin Stick Shooter with a strong emphasis on teamwork. This <strong>group project</strong> was created using <strong>Unreal Engine 4</strong> with a team of 13 students. As the <strong>Lead Programmer</strong> I was responsible for <strong>heading a team of 5 programmers</strong>, <strong>repository management using git</strong>, <strong>technical guidance</strong>, <strong>gameplay implementation</strong> and much more."
+    "Co-Op Twin Stick Shooter with a strong emphasis on teamwork. This <strong>group project</strong> was created using <strong>Unreal Engine 4</strong> with a team of 13 students. As the <strong>Lead Programmer</strong> I was responsible for <strong>heading a team of 5 programmers</strong>, <strong>repository management using git</strong>, <strong>technical guidance</strong>, <strong>gameplay implementation</strong> and much more.",
+    // 7: Block Match
+    "A simple <strong>puzzle game prototype</strong> created with C++ and a graphics library called Siv3D. Instead of using a powerful game engine, this project was completed for the purpose of practicing the usage of <strong>multi dimensional arrays</strong>, <strong>recursive functions</strong> and <strong>drawing of textures</strong>, while having to micro manage everything through code."
   ]
 
   introTextJP: string[] = [
@@ -46,7 +49,9 @@ export class ProductService{
     // 5: Stranded Typist
     "ユニティーエンジンを使用して制作した、PCのレールシュータータイピングゲームです。複数のゲームモードと難易度の上に20万の言葉のワードリストを搭載されたため、リプレイバリューがあり、プレイヤーのタイピングの腕をあがります。このプロジェクトで乗り越えたチャレンジが、多くのテキストデータの処理やゲームオブジェクトをリストでの複雑の扱いやウェイポイントと生成システムの制作です。",
     // 6: Furpunk Blast
-    "Unreal Engine 4を作って制作された、協力アクションツインスティックシューティングゲーム。メインプログラマーとしてゲームプレイ実装の上に、プログラマー５人のチームを指導、gitを使用してレポジトリーの管理、技術的なガイダンスなどを担当しました。"
+    "Unreal Engine 4を作って制作された、協力アクションツインスティックシューティングゲーム。メインプログラマーとしてゲームプレイ実装の上に、プログラマー５人のチームを指導、gitを使用してレポジトリーの管理、技術的なガイダンスなどを担当しました。",
+    // 7: Block Match
+    "ゲームエンジンを使わず、C++とSiv3Dというグラフィックスライブラリーを使用して制作されたパズルゲームのプロトタイプです。パワフルなエンジンを使う時にあんまり気にする必要がないことを練習するため作ったものです。テキスチャーの描き、二次元配列の使い、再起関数などの学習になりました。"
   ]
 
   toolLogos: Object[] = [
@@ -75,7 +80,9 @@ export class ProductService{
     // 11 Netlify
     {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1540082702/PortfolioLogos/Logo_Netlifiy.png", title: "Netlify"},
     // 12 Unreal Engine 4
-    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1547550814/PortfolioLogos/UE4simple.png", title: "Unreal Engine 4"}
+    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1547550814/PortfolioLogos/UE4simple.png", title: "Unreal Engine 4"},
+    // 13 C++
+    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548583832/PortfolioLogos/CPPLogo.png", title: "C++"}
   ]
   
   actionButtons: Object[] = [
@@ -100,7 +107,17 @@ export class ProductService{
     // 9 Furry Gladiators Github
     {link: "https://github.com/Gitschi/Furry-Gladiators-Scripts/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"},
     // 10 Soul Frames Github
-    {link: "https://github.com/Gitschi/SoulFrames", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"}
+    {link: "https://github.com/Gitschi/SoulFrames", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"},
+    // 11 Block Match Video
+    {link: "https://youtu.be/fLzmDOFMmYQ", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
+    // 12 Block Match Github
+    {link: "https://github.com/Gitschi/Block-Match", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Github.png"},
+    // 13 Block Match Gamejolt
+    {link: "https://gamejolt.com/games/block-match/393486", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Gamejolt.png"},
+    // 14 Furry Gladiators Video
+    {link: "https://youtu.be/E8zw7XeOugE", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
+    // 15 Stranded Typist Video
+    {link: "https://youtu.be/2irQxZXP1_c", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
   ]
 
   public products: Product[] = [
@@ -117,17 +134,22 @@ export class ProductService{
     new Product(
       "Furry Gladiators", "furry-gladiators", this.thumbnailPath[0], this.introTextEN[0], this.introTextJP[0],
       [this.toolLogos[0], this.toolLogos[1]],
-      [this.actionButtons[0], this.actionButtons[1], this.actionButtons[9]]
+      [this.actionButtons[14], this.actionButtons[0], this.actionButtons[1], this.actionButtons[9]]
     ),
     new Product(
       "Stranded Typist", "stranded-typist", this.thumbnailPath[5], this.introTextEN[5], this.introTextJP[5],
       [this.toolLogos[0], this.toolLogos[1]],
-      [this.actionButtons[7], this.actionButtons[8]]
+      [this.actionButtons[15], this.actionButtons[7], this.actionButtons[8]]
     ),
     new Product(
       "Super Turbo Kanji", "super-turbo-kanji", this.thumbnailPath[1], this.introTextEN[1], this.introTextJP[1],
       [this.toolLogos[5], this.toolLogos[6], this.toolLogos[7], this.toolLogos[2], this.toolLogos[8], this.toolLogos[9]],
       [this.actionButtons[3]]
+    ),
+    new Product(
+      "Block Match", "block-match", this.thumbnailPath[7], this.introTextEN[7], this.introTextJP[7],
+      [this.toolLogos[13]],
+      [this.actionButtons[11], this.actionButtons[13], this.actionButtons[12]]
     ),
     new Product(
       "VR Gamers Bot", "vr-gamers-bot", this.thumbnailPath[2], this.introTextEN[2], this.introTextJP[2],
