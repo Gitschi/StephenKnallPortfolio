@@ -13,7 +13,8 @@ export class ProductService{
     "https://res.cloudinary.com/knallcloud/image/upload/v1545351304/PortfolioImages/soulframes_banner.png",
     "https://res.cloudinary.com/knallcloud/image/upload/v1544884024/PortfolioImages/strandedtypist.jpg",
     "https://res.cloudinary.com/knallcloud/image/upload/v1549440385/PortfolioImages/Furpunk_Blast.png",
-    "https://res.cloudinary.com/knallcloud/image/upload/v1548584381/PortfolioImages/BlockMatchLogo.jpg"
+    "https://res.cloudinary.com/knallcloud/image/upload/v1548584381/PortfolioImages/BlockMatchLogo.jpg",
+    "https://res.cloudinary.com/knallcloud/image/upload/v1552188598/PortfolioImages/Brawling_Heavies_Thumb.png"
   ]
 
   introTextEN: string[] = [
@@ -26,13 +27,15 @@ export class ProductService{
     // 3: Portfolio Website
     "The website you are currently viewing is a <strong>Single Page Application</strong> allowing dynamic navigation and language change through the power of <strong>Angular</strong>. The source code, which is hosted on Github, can be viewed through the link below.",
     // 4: Soul Frames
-    "<strong>Frame Data Application</strong> for the fighting game <strong>Soul Calibur 6</strong>. It has reached <strong>2500+ downloads</strong> to date and gained great support from the competitive community. After starting as a solo project, a couple of developers have joined following the beta release, which lead to me also assuming a <strong>project management role</strong>, setting project standards and creating technical documentation.",
+    "<strong>Frame Data Application</strong> for the fighting game <strong>Soul Calibur 6</strong>. It has reached <strong>3000+ downloads</strong> to date and gained great support from the competitive community. After starting as a solo project, a couple of developers have joined following the beta release, which lead to me also assuming a <strong>project management role</strong>, setting project standards and creating technical documentation.",
     // 5: Stranded Typist
     "Created with <strong>Unity Engine</strong>, this is a on rails <strong>Typing Game</strong> highly influenced by classic titles such as <strong>Typing of the Dead</strong>. <strong>Multiple game modes</strong>, <strong>adjustable difficulty</strong> and over <strong>200,000 words</strong> increase replay value and impact on the players typing skill. Knowledge I reinforced through this project covers the following: handling large amounts of text data, managing game objects in lists, creating waypoint and spawn systems.",
     // 6: Furpunk Blast
     "Co-Op Twin Stick Shooter with a strong emphasis on teamwork. This <strong>group project</strong> was created using <strong>Unreal Engine 4</strong> with a team of 15 students. As the <strong>Lead Programmer</strong> I was responsible for <strong>heading a team of 5 programmers</strong>, <strong>repository management using git</strong>, <strong>technical guidance</strong>, <strong>gameplay implementation</strong> and much more.",
     // 7: Block Match
-    "A simple <strong>puzzle game prototype</strong> created with C++ and a graphics library called Siv3D. Instead of using a powerful game engine, this project was completed for the purpose of practicing the usage of <strong>multi dimensional arrays</strong>, <strong>recursive functions</strong> and <strong>drawing of textures</strong>, while having to micro manage everything through code."
+    "A simple <strong>puzzle game prototype</strong> created with C++ and a graphics library called Siv3D. Instead of using a powerful game engine, this project was completed for the purpose of practicing the usage of <strong>multi dimensional arrays</strong>, <strong>recursive functions</strong> and <strong>drawing of textures</strong>, while having to micro manage everything through code.",
+    // 8: Brawling Heavies
+    "<strong>Hybrid Fighting Game</strong> which implements concepts from multiple genres. The base for this project was built using C++ and the rest using <strong>Unreal Engine 4's</strong> blueprint system. Skills reinforced through this project are <strong>Implementation of accurate hit detection</strong>, <strong>UE4 animation state machines</strong>, <strong>animation notifies</strong> and <strong>communication between blueprints and C++</strong>."
   ]
 
   introTextJP: string[] = [
@@ -41,17 +44,19 @@ export class ProductService{
     // 1: Super Turbo Kanji
     "始めての規模が大きいな、語学や格闘ゲームやプログラミングに対しての興味を結び付けたプロジェクトです。普通の漢字勉強方法と違って、格闘ゲームの用語を例にして漢字が勉強できる作ったウエブサイトです。バックエンドがNode.jsやExpress Frameworkを使ってルーティングやMongoDBのデータベースとのやり取りを行っています。",
     // 2: VR Gamers Bot
-    "VRゲーマーのために作った400以上のフォロワーを集まったアクティブなリツイートボットです。TwitterのAPIを使用して、指定されたハッシュタグで望ましいコンテンツをみつけて、リツイートすることでVRゲームコンテンツのハブなりました。アルゴリズムでスパムやクオリティーが低いコンテンツを判断して、無視します。VRゲーム会社でSNSマーケティングのバイトをした頃色々な過程を自動化するために使用しました。",
+    "VRゲーマーのために作った650以上のフォロワーを集まったアクティブなリツイートボットです。TwitterのAPIを使用して、指定されたハッシュタグで望ましいコンテンツをみつけて、リツイートすることでVRゲームコンテンツのハブなりました。アルゴリズムでスパムやクオリティーが低いコンテンツを判断して、無視します。VRゲーム会社でSNSマーケティングのバイトをした頃色々な過程を自動化するために使用しました。",
     // 3: Portfolio Website
     "このポートフォリオウエブサイトは、Angularの力で動的に言語を変えることができて、リーロードせずにナビゲーションができるシングルページアプリケーションです。継続的に更新される、私が完成させたプログラミングプロジェクトのハブです。Githubにアップロードしているソースコードが下のリンクでアクセスできます。",
     // 4: Soul Frames
-    "ソールキャリバー６の2500回以上ダウンロードされたフレーム表アンドロイドアプリケーションです。ソロプロジェクトで始まったが、ベター版のリリースから複数の貢献者が参加するようになりました。あの時からリーダの役割を担当して、リポジトリの基準を決めてテクニカルドキュメントを書いています。準備したDiscordサーバーやアプリのツイッターアカウントでユーザのやり取りで改善やバグ直しを行っています。",
+    "ソールキャリバー６の3000回以上ダウンロードされたフレーム表アンドロイドアプリケーションです。ソロプロジェクトで始まったが、ベター版のリリースから複数の貢献者が参加するようになりました。あの時からリーダの役割を担当して、リポジトリの基準を決めてテクニカルドキュメントを書いています。準備したDiscordサーバーやアプリのツイッターアカウントでユーザのやり取りで改善やバグ直しを行っています。",
     // 5: Stranded Typist
     "ユニティーエンジンを使用して制作した、PCのレールシュータータイピングゲームです。複数のゲームモードと難易度の上に20万の言葉のワードリストを搭載されたため、リプレイバリューがあり、プレイヤーのタイピングの腕をあがります。このプロジェクトで乗り越えたチャレンジが、多くのテキストデータの処理やゲームオブジェクトをリストでの複雑の扱いやウェイポイントと生成システムの制作です。",
     // 6: Furpunk Blast
     "Unreal Engine 4を作って制作された、協力アクションツインスティックシューティングゲーム。メインプログラマーとしてゲームプレイ実装の上に、プログラマー５人のチームを指導、gitを使用してレポジトリーの管理、技術的なガイダンスなどを担当しました。",
     // 7: Block Match
-    "ゲームエンジンを使わず、C++とSiv3Dというグラフィックスライブラリーを使用して制作されたパズルゲームのプロトタイプです。パワフルなエンジンを使う時にあんまり気にする必要がないことを練習するため作ったものです。テキスチャーの描き、二次元配列の使い、再起関数などの学習になりました。"
+    "ゲームエンジンを使わず、C++とSiv3Dというグラフィックスライブラリーを使用して制作されたパズルゲームのプロトタイプです。パワフルなエンジンを使う時にあんまり気にする必要がないことを練習するため作ったものです。テキスチャーの描き、二次元配列の使い、再起関数などの学習になりました。",
+    // 8: Brawling Heavies
+    "複数のジャンルの特徴を含める雑種格闘ゲームです。ゲームの基本がほとんどのプラットフォームファイターと近いが、RPGのような強化システムの実装で完全に新しい経験になります。プロジェクトのベースがC++で出来上がり追加機能だのはUE4のブループリントシステムで実装されました。"
   ]
 
   toolLogos: Object[] = [
@@ -121,19 +126,28 @@ export class ProductService{
     // 16 Furpunk Blast Video
     {link: "https://youtu.be/afrle4UgOlQ", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
     // 17 Furpunk Blast Gamejolt
-    {link: "https://gamejolt.com/games/furpunk-blast/395295", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Gamejolt.png"}
+    {link: "https://gamejolt.com/games/furpunk-blast/395295", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Gamejolt.png"},
+    // 18 Brawling Heavies Video
+    {link: "https://youtu.be/KoKLoO2RhY0", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
+    // 19 Brawling Heavies Gamejolt
+    {link: "https://gamejolt.com/games/brawling-heavies/401316", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Gamejolt.png"},
   ]
 
   public products: Product[] = [
     new Product(
-      "Furpunk Blast", "furpunk-blast", this.thumbnailPath[6], this.introTextEN[6], this.introTextJP[6],
-      [this.toolLogos[12]],
-      [this.actionButtons[16], this.actionButtons[17]]
+      "Brawling Heavies", "brawling-heavies", this.thumbnailPath[8], this.introTextEN[8], this.introTextJP[8],
+      [this.toolLogos[13], this.toolLogos[12]],
+      [this.actionButtons[18], this.actionButtons[19]]
     ),
     new Product(
       "Soul Frames", "soul-frames", this.thumbnailPath[4], this.introTextEN[4], this.introTextJP[4],
       [this.toolLogos[10], this.toolLogos[3], this.toolLogos[4]],
       [this.actionButtons[6], this.actionButtons[10]]
+    ),
+    new Product(
+      "Furpunk Blast", "furpunk-blast", this.thumbnailPath[6], this.introTextEN[6], this.introTextJP[6],
+      [this.toolLogos[12]],
+      [this.actionButtons[16], this.actionButtons[17]]
     ),
     new Product(
       "Furry Gladiators", "furry-gladiators", this.thumbnailPath[0], this.introTextEN[0], this.introTextJP[0],
