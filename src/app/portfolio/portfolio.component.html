@@ -1,9 +1,9 @@
 <div class="container">
   <div class="contentContainer largeContainer">
     <div class="categoryButtonBox fadeSlideBottom">
-      <button class="categoryButton btn btn-primary" (click)="setCategories($event)">All</button>
-      <button class="categoryButton btn btn-primary" (click)="setCategories($event)">Game</button>
-      <button class="categoryButton btn btn-primary" (click)="setCategories($event)">Web</button>
+      <button class="categoryButton btn" [ngClass]="selectedCategory === 'All' ? 'btn-primary' : 'btn-secondary'" (click)="setCategories($event)">All</button>
+      <button class="categoryButton btn" [ngClass]="selectedCategory === 'Game' ? 'btn-primary' : 'btn-secondary'" (click)="setCategories($event)">Game</button>
+      <button class="categoryButton btn" [ngClass]="selectedCategory === 'Web' ? 'btn-primary' : 'btn-secondary'" (click)="setCategories($event)">Web</button>
     </div>
 
     <!-- A single Product -->
