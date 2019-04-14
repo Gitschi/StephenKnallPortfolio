@@ -17,15 +17,15 @@ export class NavbarComponent implements OnInit {
     this.isExpanded = false;
   }
 
-  ToggleNav(){
+  toggleNav(){
     this.isExpanded = !this.isExpanded;
   }
 
-  SwitchToEnglish(){
-    this.languageService.SwitchToEnglish();
+  switchToEnglish(){
+    this.languageService.switchToEnglish();
   }
 
-  SwitchToJapanese(){
-    this.languageService.SwitchToJapanese();
+  switchToJapanese(){
+    this.languageService.switchToJapanese();
   }
 }

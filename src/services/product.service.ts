@@ -190,7 +190,7 @@ export class ProductService{
     ),
   ]
 
-  GetProducts(){
+  getProducts(){
     return this.products.slice();
   }
 }

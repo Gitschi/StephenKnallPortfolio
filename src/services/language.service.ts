@@ -13,13 +13,13 @@ export class LanguageService{
     return this.displayIsEnglish;
   }
 
-  SwitchToEnglish(){
+  switchToEnglish(){
     if(!this.displayIsEnglish){
       this.displayIsEnglish = true;
     }
   }
 
-  SwitchToJapanese(){
+  switchToJapanese(){
     if(this.displayIsEnglish){
       this.displayIsEnglish = false;
     }

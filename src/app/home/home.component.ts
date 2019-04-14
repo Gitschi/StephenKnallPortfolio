@@ -40,13 +40,13 @@ export class HomeComponent implements OnInit {
     this.seoService.removeCanonicalTags();
   }
 
-  NavigatePortfolio() {
+  navigatePortfolio() {
     this.router.navigateByUrl('/portfolio');
     //scroll to top of page
     document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
-  NavigateAbout() {
+  navigateAbout() {
     this.router.navigateByUrl('/about');
     //scroll to top of page
     document.body.scrollTop = document.documentElement.scrollTop = 0;
