@@ -135,47 +135,56 @@ export class ProductService{
 
   public products: Product[] = [
     new Product(
-      "Brawling Heavies", "brawling-heavies", this.thumbnailPath[8], this.introTextEN[8], this.introTextJP[8],
+      "Brawling Heavies", "brawling-heavies", "Game",
+      this.thumbnailPath[8], this.introTextEN[8], this.introTextJP[8],
       [this.toolLogos[13], this.toolLogos[12]],
       [this.actionButtons[18], this.actionButtons[19]]
     ),
     new Product(
-      "Soul Frames", "soul-frames", this.thumbnailPath[4], this.introTextEN[4], this.introTextJP[4],
+      "Soul Frames", "soul-frames", "Web",
+      this.thumbnailPath[4], this.introTextEN[4], this.introTextJP[4],
       [this.toolLogos[10], this.toolLogos[3], this.toolLogos[4]],
       [this.actionButtons[6], this.actionButtons[10]]
     ),
     new Product(
-      "Furpunk Blast", "furpunk-blast", this.thumbnailPath[6], this.introTextEN[6], this.introTextJP[6],
+      "Furpunk Blast", "furpunk-blast", "Game",
+      this.thumbnailPath[6], this.introTextEN[6], this.introTextJP[6],
       [this.toolLogos[12]],
       [this.actionButtons[16], this.actionButtons[17]]
     ),
     new Product(
-      "Furry Gladiators", "furry-gladiators", this.thumbnailPath[0], this.introTextEN[0], this.introTextJP[0],
+      "Furry Gladiators", "furry-gladiators", "Game",
+      this.thumbnailPath[0], this.introTextEN[0], this.introTextJP[0],
       [this.toolLogos[0], this.toolLogos[1]],
       [this.actionButtons[14], this.actionButtons[0], this.actionButtons[1], this.actionButtons[9]]
     ),
     new Product(
-      "Stranded Typist", "stranded-typist", this.thumbnailPath[5], this.introTextEN[5], this.introTextJP[5],
+      "Stranded Typist", "stranded-typist", "Game",
+      this.thumbnailPath[5], this.introTextEN[5], this.introTextJP[5],
       [this.toolLogos[0], this.toolLogos[1]],
       [this.actionButtons[15], this.actionButtons[7], this.actionButtons[8]]
     ),
     new Product(
-      "Super Turbo Kanji", "super-turbo-kanji", this.thumbnailPath[1], this.introTextEN[1], this.introTextJP[1],
+      "Super Turbo Kanji", "super-turbo-kanji", "Web",
+      this.thumbnailPath[1], this.introTextEN[1], this.introTextJP[1],
       [this.toolLogos[5], this.toolLogos[6], this.toolLogos[7], this.toolLogos[2], this.toolLogos[8], this.toolLogos[9]],
       [this.actionButtons[3]]
     ),
     new Product(
-      "Block Match", "block-match", this.thumbnailPath[7], this.introTextEN[7], this.introTextJP[7],
+      "Block Match", "block-match", "Game",
+      this.thumbnailPath[7], this.introTextEN[7], this.introTextJP[7],
       [this.toolLogos[13]],
       [this.actionButtons[11], this.actionButtons[13], this.actionButtons[12]]
     ),
     new Product(
-      "VR Gamers Bot", "vr-gamers-bot", this.thumbnailPath[2], this.introTextEN[2], this.introTextJP[2],
+      "VR Gamers Bot", "vr-gamers-bot", "Web",
+      this.thumbnailPath[2], this.introTextEN[2], this.introTextJP[2],
       [this.toolLogos[7], this.toolLogos[2], this.toolLogos[9]],
       [this.actionButtons[4], this.actionButtons[2]]
     ),
     new Product(
-      "Portfolio Website", "portfolio-website", this.thumbnailPath[3], this.introTextEN[3], this.introTextJP[3],
+      "Portfolio Website", "portfolio-website", "Web",
+      this.thumbnailPath[3], this.introTextEN[3], this.introTextJP[3],
       [this.toolLogos[10], this.toolLogos[3], this.toolLogos[11]],
       [this.actionButtons[5]]
     ),

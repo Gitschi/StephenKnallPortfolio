@@ -10,6 +10,16 @@
   margin: 20px;
 }
 
+.categoryButtonBox{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.categoryButton{
+  margin: 10px;
+}
+
 .productName{
   margin: 5px;
 }
