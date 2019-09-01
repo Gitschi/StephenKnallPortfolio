@@ -14,7 +14,8 @@ export class ProductService{
     "https://res.cloudinary.com/knallcloud/image/upload/v1544884024/PortfolioImages/strandedtypist.jpg",
     "https://res.cloudinary.com/knallcloud/image/upload/v1549440385/PortfolioImages/Furpunk_Blast.png",
     "https://res.cloudinary.com/knallcloud/image/upload/v1548584381/PortfolioImages/BlockMatchLogo.jpg",
-    "https://res.cloudinary.com/knallcloud/image/upload/v1552188598/PortfolioImages/Brawling_Heavies_Thumb.png"
+    "https://res.cloudinary.com/knallcloud/image/upload/v1552188598/PortfolioImages/Brawling_Heavies_Thumb.png",
+    "https://res.cloudinary.com/knallcloud/image/upload/v1567304382/PortfolioImages/LandOfBeastsBanner.png"
   ]
 
   introTextEN: string[] = [
@@ -35,7 +36,9 @@ export class ProductService{
     // 7: Block Match
     "A simple <strong>puzzle game prototype</strong> created with C++ and a graphics library called Siv3D. Instead of using a powerful game engine, this project was completed for the purpose of practicing the usage of <strong>multi dimensional arrays</strong>, <strong>recursive functions</strong> and <strong>drawing of textures</strong>, while having to micro manage everything through code.",
     // 8: Brawling Heavies
-    "<strong>Hybrid Fighting Game</strong> which implements concepts from multiple genres. The base for this project was built using C++ and the rest using <strong>Unreal Engine 4's</strong> blueprint system. Skills reinforced through this project are <strong>Implementation of accurate hit detection</strong>, <strong>UE4 animation state machines</strong>, <strong>animation notifies</strong> and <strong>communication between blueprints and C++</strong>."
+    "<strong>Hybrid Fighting Game</strong> which implements concepts from multiple genres. The base for this project was built using C++ and the rest using <strong>Unreal Engine 4's</strong> blueprint system. Skills reinforced through this project are <strong>Implementation of accurate hit detection</strong>, <strong>UE4 animation state machines</strong>, <strong>animation notifies</strong> and <strong>communication between blueprints and C++</strong>.",
+    // 9: Land of Beasts
+    "Work in progress <strong>Action RPG</strong> with an emphasis on cooperation between hunter and beast. The user can freely switch between the hunter and beast at any point in time while the couterpart will be controlled by Ai or a second player. Designing the code to dynamically adapt to these changes in player state at any time was quite the challenge. Other skills reinforced by this project include designing class inheritance for large scale projects and enemy/partner Ai behavior."
   ]
 
   introTextJP: string[] = [
@@ -56,7 +59,9 @@ export class ProductService{
     // 7: Block Match
     "ゲームエンジンを使わず、C++とSiv3Dというグラフィックスライブラリーを使用して制作されたパズルゲームのプロトタイプです。パワフルなエンジンを使う時にあんまり気にする必要がないことを練習するため作ったものです。テキスチャーの描き、二次元配列の使い、再起関数などの学習になりました。",
     // 8: Brawling Heavies
-    "複数のジャンルの特徴を含める雑種格闘ゲームです。ゲームの基本がほとんどのプラットフォームファイターと近いが、RPGのような強化システムの実装で完全に新しい経験になります。プロジェクトのベースだけがC++で出来上がりシステムの大半はUE4のブループリントシステムで実装されました。"
+    "複数のジャンルの特徴を含める雑種格闘ゲームです。ゲームの基本がほとんどのプラットフォームファイターと近いが、RPGのような強化システムの実装で完全に新しい経験になります。プロジェクトのベースだけがC++で出来上がりシステムの大半はUE4のブループリントシステムで実装されました。",
+    // 9: Land of Beasts
+    "進行中の作業のアクションRPGゲーム。ハンターと野獣のデュオを操作できるがカウンターパートはAiか他のプレイヤーに操作されます。あのいつでも可能のプレイヤーステートの変更にコードを適用されることがかなり苦労しました。その上クラス継続やAIの動作のこと色々勉強ができました。"
   ]
 
   toolLogos: Object[] = [
@@ -131,9 +136,19 @@ export class ProductService{
     {link: "https://youtu.be/KoKLoO2RhY0", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
     // 19 Brawling Heavies Gamejolt
     {link: "https://gamejolt.com/games/brawling-heavies/401316", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Gamejolt.png"},
+    // 20 Land of Beasts Youtube
+    {link: "https://youtu.be/7R-4tY87N6o", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
+    // 21 Land of Beasts Gamejolt
+    {link: "https://gamejolt.com/games/land-of-beasts/436762", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Gamejolt.png"},
   ]
 
   public products: Product[] = [
+    new Product(
+      "Land of Beasts (WIP)", "land-of-beasts", "Game",
+      this.thumbnailPath[9], this.introTextEN[9], this.introTextJP[9],
+      [this.toolLogos[13], this.toolLogos[12]],
+      [this.actionButtons[20], this.actionButtons[21]]
+    ),
     new Product(
       "Brawling Heavies", "brawling-heavies", "Game",
       this.thumbnailPath[8], this.introTextEN[8], this.introTextJP[8],
