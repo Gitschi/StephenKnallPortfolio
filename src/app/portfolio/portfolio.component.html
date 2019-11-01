@@ -8,7 +8,11 @@
 
     <!-- A single Product -->
     <div *ngFor="let product of products; let i = index" class="singleProduct fadeSlideBottom" [id]="product.id">
-      <h2 class="centered white productName" [innerHtml]="product.name"></h2>
+      <div class="productTopRow">
+        <div class="alignmentHelper"></div> 
+        <h2 class="centered white productName" [innerHtml]="product.name"></h2>
+        <button class="memberAmountBadge" disabled [innerHtml]="product.memberTag"></button>
+      </div>
       <div class="row">
         <div class="col-sm-12 col-xl-6">
           <img class="portfolioThumbnail" [src]="product.thumbnailPath">

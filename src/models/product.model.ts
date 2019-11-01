@@ -7,6 +7,7 @@ export class Product{
     public introTextEN: string,
     public introTextJP: string,
     public toolLogos: Object[],
-    public actionButtons: Object[]
+    public actionButtons: Object[],
+    public memberTag: string
   ){}
 }

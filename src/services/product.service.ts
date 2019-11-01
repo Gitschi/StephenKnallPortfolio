@@ -15,7 +15,8 @@ export class ProductService{
     "https://res.cloudinary.com/knallcloud/image/upload/v1549440385/PortfolioImages/Furpunk_Blast.png",
     "https://res.cloudinary.com/knallcloud/image/upload/v1548584381/PortfolioImages/BlockMatchLogo.jpg",
     "https://res.cloudinary.com/knallcloud/image/upload/v1552188598/PortfolioImages/Brawling_Heavies_Thumb.png",
-    "https://res.cloudinary.com/knallcloud/image/upload/v1567304382/PortfolioImages/LandOfBeastsBanner.png"
+    "https://res.cloudinary.com/knallcloud/image/upload/v1567304382/PortfolioImages/LandOfBeastsBanner.png",
+    "https://res.cloudinary.com/knallcloud/image/upload/v1572602848/PortfolioImages/Monster_Reapers_-_Release_confirm.png"
   ]
 
   introTextEN: string[] = [
@@ -38,7 +39,9 @@ export class ProductService{
     // 8: Brawling Heavies
     "<strong>Hybrid Fighting Game</strong> which implements concepts from multiple genres. The base for this project was built using C++ and the rest using <strong>Unreal Engine 4's</strong> blueprint system. Skills reinforced through this project are <strong>Implementation of accurate hit detection</strong>, <strong>UE4 animation state machines</strong>, <strong>animation notifies</strong> and <strong>communication between blueprints and C++</strong>.",
     // 9: Land of Beasts
-    "Work in progress <strong>Action RPG</strong> with an emphasis on cooperation between hunter and beast. The user can freely switch between the hunter and beast at any point in time while the couterpart will be controlled by Ai or a second player. Designing the code to dynamically adapt to these changes in player state at any time was quite the challenge. Other skills reinforced by this project include designing class inheritance for large scale projects and enemy/partner Ai behavior."
+    "Work in progress <strong>Action RPG</strong> with an emphasis on cooperation between hunter and beast. The user can freely switch between the hunter and beast at any point in time while the couterpart will be controlled by Ai or a second player. Designing the code to dynamically adapt to these changes in player state at any time was quite the challenge. Other skills reinforced by this project include designing class inheritance for large scale projects and enemy/partner Ai behavior.",
+    // 10: Monster Reapers VR
+    "This <strong>Roguelike VR Monster Hunting Game</strong> was created by one of my friends and me over a pretty short amount of time. <strong>It got released on Steam Early Access on October 30th 2019</strong> and is <strong>constantly being updated</strong> according to the road map. My contributions to this project were <strong>not only programming</strong>, but also <strong>game design</strong>, <strong>dev-ops</strong> and <strong>promotion</strong>. Most of the things I've learned over the last years have come together and have been reinforced through this project."
   ]
 
   introTextJP: string[] = [
@@ -61,7 +64,9 @@ export class ProductService{
     // 8: Brawling Heavies
     "複数のジャンルの特徴を含める雑種格闘ゲームです。ゲームの基本がほとんどのプラットフォームファイターと近いが、RPGのような強化システムの実装で完全に新しい経験になります。プロジェクトのベースだけがC++で出来上がりシステムの大半はUE4のブループリントシステムで実装されました。",
     // 9: Land of Beasts
-    "進行中の作業のアクションRPGゲーム。ハンターと野獣のデュオを操作できるがカウンターパートはAiか他のプレイヤーに操作されます。あのいつでも可能のプレイヤーステートの変更にコードを適用されることがかなり苦労しました。その上クラス継続やAIの動作のこと色々勉強ができました。"
+    "進行中の作業のアクションRPGゲーム。ハンターと野獣のデュオを操作できるがカウンターパートはAiか他のプレイヤーに操作されます。あのいつでも可能のプレイヤーステートの変更にコードを適用されることがかなり苦労しました。その上クラス継続やAIの動作のこと色々勉強ができました。",
+    // 10: Monster Reapers VR
+    "このローグライクモンスターハンティングVRゲームが一人の友達と一緒に作ってスチーム Early Access 自己出版をしています。ゲームのコア部分や最初のレベルパックが完成していますがこれからも絶えず新しいシステム、武器、敵やレベルを追加しています。私の役割はプログラミング以上もゲームデザイン、Dev-ops や PR をしました。初めての自己出版のタイトルなのでゲーム開発のことに全体的に色々勉強になりました。"
   ]
 
   toolLogos: Object[] = [
@@ -140,68 +145,89 @@ export class ProductService{
     {link: "https://youtu.be/7R-4tY87N6o", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
     // 21 Land of Beasts Gamejolt
     {link: "https://gamejolt.com/games/land-of-beasts/436762", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539692126/PortfolioActionButtons/Button_Gamejolt.png"},
+    // 22 Monster Reapers VR Steam
+    {link: "https://store.steampowered.com/app/616680/Monster_Reapers_VR/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1572605985/PortfolioActionButtons/DownloadOnSteam.png"},
+    // 23 Monster Reapers VR Youtube
+    {link: "https://www.youtube.com/watch?v=YnctTRTcHjA", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
   ]
 
   public products: Product[] = [
     new Product(
-      "Land of Beasts (WIP)", "land-of-beasts", "Game",
-      this.thumbnailPath[9], this.introTextEN[9], this.introTextJP[9],
+      "Monster Reapers VR", "monster-reapers-vr", "Game",
+      this.thumbnailPath[10], this.introTextEN[10], this.introTextJP[10],
       [this.toolLogos[13], this.toolLogos[12]],
-      [this.actionButtons[20], this.actionButtons[21]]
-    ),
-    new Product(
-      "Brawling Heavies", "brawling-heavies", "Game",
-      this.thumbnailPath[8], this.introTextEN[8], this.introTextJP[8],
-      [this.toolLogos[13], this.toolLogos[12]],
-      [this.actionButtons[18], this.actionButtons[19]]
+      [this.actionButtons[22], this.actionButtons[23]],
+      "Group"
     ),
     new Product(
       "Soul Frames", "soul-frames", "Web",
       this.thumbnailPath[4], this.introTextEN[4], this.introTextJP[4],
       [this.toolLogos[10], this.toolLogos[3], this.toolLogos[4]],
-      [this.actionButtons[6], this.actionButtons[10]]
+      [this.actionButtons[6], this.actionButtons[10]],
+      "Group"
     ),
     new Product(
-      "Furpunk Blast", "furpunk-blast", "Game",
-      this.thumbnailPath[6], this.introTextEN[6], this.introTextJP[6],
-      [this.toolLogos[12]],
-      [this.actionButtons[16], this.actionButtons[17]]
+      "Land of Beasts (WIP)", "land-of-beasts", "Game",
+      this.thumbnailPath[9], this.introTextEN[9], this.introTextJP[9],
+      [this.toolLogos[13], this.toolLogos[12]],
+      [this.actionButtons[20], this.actionButtons[21]],
+      "Solo"
     ),
     new Product(
       "Furry Gladiators", "furry-gladiators", "Game",
       this.thumbnailPath[0], this.introTextEN[0], this.introTextJP[0],
       [this.toolLogos[0], this.toolLogos[1]],
-      [this.actionButtons[14], this.actionButtons[0], this.actionButtons[1], this.actionButtons[9]]
+      [this.actionButtons[14], this.actionButtons[0], this.actionButtons[1], this.actionButtons[9]],
+      "Solo"
     ),
     new Product(
-      "Stranded Typist", "stranded-typist", "Game",
-      this.thumbnailPath[5], this.introTextEN[5], this.introTextJP[5],
-      [this.toolLogos[0], this.toolLogos[1]],
-      [this.actionButtons[15], this.actionButtons[7], this.actionButtons[8]]
+      "Brawling Heavies", "brawling-heavies", "Game",
+      this.thumbnailPath[8], this.introTextEN[8], this.introTextJP[8],
+      [this.toolLogos[13], this.toolLogos[12]],
+      [this.actionButtons[18], this.actionButtons[19]],
+      "Solo"
     ),
     new Product(
       "Super Turbo Kanji", "super-turbo-kanji", "Web",
       this.thumbnailPath[1], this.introTextEN[1], this.introTextJP[1],
       [this.toolLogos[5], this.toolLogos[6], this.toolLogos[7], this.toolLogos[2], this.toolLogos[8], this.toolLogos[9]],
-      [this.actionButtons[3]]
+      [this.actionButtons[3]],
+      "Solo"
+    ),
+    new Product(
+      "Furpunk Blast", "furpunk-blast", "Game",
+      this.thumbnailPath[6], this.introTextEN[6], this.introTextJP[6],
+      [this.toolLogos[12]],
+      [this.actionButtons[16], this.actionButtons[17]],
+      "Group"
+    ),
+    new Product(
+      "Stranded Typist", "stranded-typist", "Game",
+      this.thumbnailPath[5], this.introTextEN[5], this.introTextJP[5],
+      [this.toolLogos[0], this.toolLogos[1]],
+      [this.actionButtons[15], this.actionButtons[7], this.actionButtons[8]],
+      "Solo"
     ),
     new Product(
       "Block Match", "block-match", "Game",
       this.thumbnailPath[7], this.introTextEN[7], this.introTextJP[7],
       [this.toolLogos[13]],
-      [this.actionButtons[11], this.actionButtons[13], this.actionButtons[12]]
+      [this.actionButtons[11], this.actionButtons[13], this.actionButtons[12]],
+      "Solo"
     ),
     new Product(
       "VR Gamers Bot", "vr-gamers-bot", "Web",
       this.thumbnailPath[2], this.introTextEN[2], this.introTextJP[2],
       [this.toolLogos[7], this.toolLogos[2], this.toolLogos[9]],
-      [this.actionButtons[4], this.actionButtons[2]]
+      [this.actionButtons[4], this.actionButtons[2]],
+      "Solo"
     ),
     new Product(
       "Portfolio Website", "portfolio-website", "Web",
       this.thumbnailPath[3], this.introTextEN[3], this.introTextJP[3],
       [this.toolLogos[10], this.toolLogos[3], this.toolLogos[11]],
-      [this.actionButtons[5]]
+      [this.actionButtons[5]],
+      "Solo"
     ),
   ]
 
