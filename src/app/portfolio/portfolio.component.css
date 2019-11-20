@@ -8,14 +8,27 @@
 }
 
 .memberAmountBadge{
+  position: absolute;
+  right: 30px;
+  top: 0px;
   margin-top: 5px;
   color: white;
-  width: 80px;
+  width: 90px;
   height: 40px;
-  background-color: rgb(34, 34, 34);
   border-radius: 5px;
-  border: 3px white solid;
-  align-self: flex-end;
+  border: 2px white solid;
+}
+
+.soloTag{
+  background-color: #6ba4ff;
+}
+
+.groupTag{
+  background-color: #6d8c3e;
+}
+
+.companyTag{
+  background-color: #816bff;
 }
 
 .portfolioThumbnail{
@@ -76,4 +89,12 @@
 	height: 6px;
 	background: url(https://res.cloudinary.com/knallcloud/image/upload/v1539696648/hr-11.png) repeat-x 0 0;
   border: 0;
+}
+
+@media (max-width: 770px) {
+  .memberAmountBadge {
+    position: static;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
 }

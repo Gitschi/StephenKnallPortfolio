@@ -8,11 +8,8 @@
 
     <!-- A single Product -->
     <div *ngFor="let product of products; let i = index" class="singleProduct fadeSlideBottom" [id]="product.id">
-      <div class="productTopRow">
-        <div class="alignmentHelper"></div> 
-        <h2 class="centered white productName" [innerHtml]="product.name"></h2>
-        <button class="memberAmountBadge" disabled [innerHtml]="product.memberTag"></button>
-      </div>
+      <h2 class="centered white productName" [innerHtml]="product.name"></h2>
+      <button disabled [innerHtml]="languageService.displayIsEnglish ? product.projectTag.tagTextEN : product.projectTag.tagTextJP" [ngClass]="['memberAmountBadge', product.projectTag.tagClass]"></button>
       <div class="row">
         <div class="col-sm-12 col-xl-6">
           <img class="portfolioThumbnail" [src]="product.thumbnailPath">

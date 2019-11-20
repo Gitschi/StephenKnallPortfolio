@@ -8,6 +8,6 @@ export class Product{
     public introTextJP: string,
     public toolLogos: Object[],
     public actionButtons: Object[],
-    public memberTag: string
+    public projectTag: object
   ){}
 }
