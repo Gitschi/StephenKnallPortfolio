@@ -25,7 +25,10 @@ export class ProductService{
     "https://res.cloudinary.com/knallcloud/image/upload/v1548584381/PortfolioImages/BlockMatchLogo.jpg",
     "https://res.cloudinary.com/knallcloud/image/upload/v1552188598/PortfolioImages/Brawling_Heavies_Thumb.png",
     "https://res.cloudinary.com/knallcloud/image/upload/v1567304382/PortfolioImages/LandOfBeastsBanner.png",
-    "https://res.cloudinary.com/knallcloud/image/upload/v1572602848/PortfolioImages/Monster_Reapers_-_Release_confirm.png"
+    "https://res.cloudinary.com/knallcloud/image/upload/v1572602848/PortfolioImages/Monster_Reapers_-_Release_confirm.png",
+    "https://res.cloudinary.com/knallcloud/image/upload/v1574256795/PortfolioImages/Motionbase_banner.png",
+    "https://res.cloudinary.com/knallcloud/image/upload/v1574257054/PortfolioImages/vacancy_chat_banner.png",
+    "https://res.cloudinary.com/knallcloud/image/upload/v1574258517/PortfolioImages/sog_banner.png"
   ]
 
   introTextEN: string[] = [
@@ -50,7 +53,13 @@ export class ProductService{
     // 9: Land of Beasts
     "Work in progress <strong>Action RPG</strong> with an emphasis on cooperation between hunter and beast. The user can freely switch between the hunter and beast at any point in time while the couterpart will be controlled by Ai or a second player. Designing the code to dynamically adapt to these changes in player state at any time was quite the challenge. Other skills reinforced by this project include designing class inheritance for large scale projects and enemy/partner Ai behavior.",
     // 10: Monster Reapers VR
-    "This <strong>Roguelike VR Monster Hunting Game</strong> was created by one of my friends and me over a pretty short amount of time. <strong>It got released on Steam Early Access on October 30th 2019</strong> and is <strong>constantly being updated</strong> according to the road map. My contributions to this project were <strong>not only programming</strong>, but also <strong>game design</strong>, <strong>dev-ops</strong> and <strong>promotion</strong>. Most of the things I've learned over the last years have come together and have been reinforced through this project."
+    "This <strong>Roguelike VR Monster Hunting Game</strong> was created by one of my friends and me over a pretty short amount of time. <strong>It got released on Steam Early Access on October 30th 2019</strong> and is <strong>constantly being updated</strong> according to the road map. My contributions to this project were <strong>not only programming</strong>, but also <strong>game design</strong>, <strong>dev-ops</strong> and <strong>promotion</strong>. Most of the things I've learned over the last years have come together and have been reinforced through this project.",
+    // 11: Vacancy Chat
+    "VACANCY CHAT",
+    // 12: Swords of Gargantua
+    "SOG",
+    // 13: Motionbase Chat
+    "MOTIONBASE"
   ]
 
   introTextJP: string[] = [
@@ -75,7 +84,13 @@ export class ProductService{
     // 9: Land of Beasts
     "進行中の作業のアクションRPGゲーム。ハンターと野獣のデュオを操作できるがカウンターパートはAiか他のプレイヤーに操作されます。あのいつでも可能のプレイヤーステートの変更にコードを適用されることがかなり苦労しました。その上クラス継続やAIの動作のこと色々勉強ができました。",
     // 10: Monster Reapers VR
-    "このローグライクモンスターハンティングVRゲームが一人の友達と一緒に作ってスチーム Early Access 自己出版をしています。ゲームのコア部分や最初のレベルパックが完成していますがこれからも絶えず新しいシステム、武器、敵やレベルを追加しています。私の役割はプログラミング以上もゲームデザイン、Dev-ops や PR をしました。初めての自己出版のタイトルなのでゲーム開発のことに全体的に色々勉強になりました。"
+    "このローグライクモンスターハンティングVRゲームが一人の友達と一緒に作ってスチーム Early Access 自己出版をしています。ゲームのコア部分や最初のレベルパックが完成していますがこれからも絶えず新しいシステム、武器、敵やレベルを追加しています。私の役割はプログラミング以上もゲームデザイン、Dev-ops や PR をしました。初めての自己出版のタイトルなのでゲーム開発のことに全体的に色々勉強になりました。",
+    // 11: Vacancy Chat
+    "VACANCY CHAT",
+    // 12: Swords of Gargantua
+    "SOG",
+    // 13: Motionbase Chat
+    "MOTIONBASE"
   ]
 
   toolLogos: Object[] = [
@@ -158,6 +173,14 @@ export class ProductService{
     {link: "https://store.steampowered.com/app/616680/Monster_Reapers_VR/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1572605985/PortfolioActionButtons/DownloadOnSteam.png"},
     // 23 Monster Reapers VR Youtube
     {link: "https://www.youtube.com/watch?v=YnctTRTcHjA", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
+    // 24 Vacancy chat project
+    {link: "https://vacancy-creators.com/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539767942/PortfolioActionButtons/Button_Project.png"},
+    // 25 Swords of Gargantua Steam
+    {link: "https://store.steampowered.com/app/895200/SWORDS_of_GARGANTUA/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1572605985/PortfolioActionButtons/DownloadOnSteam.png"},
+    // 26 Swords of Gargantua Video
+    {link: "https://www.youtube.com/watch?v=EJTzZ9vHpkU&ab_channel=UploadVR", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
+    // 27 Motionbase chat project
+    {link: "https://www.motionbase.jp/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539767942/PortfolioActionButtons/Button_Project.png"},
   ]
 
   public products: Product[] = [
@@ -169,11 +192,32 @@ export class ProductService{
       this.projectTags[1]
     ),
     new Product(
+      "Vacancy Chat", "vacancy-chat", "Web",
+      this.thumbnailPath[12], this.introTextEN[11], this.introTextJP[11],
+      [this.toolLogos[10], this.toolLogos[3], this.toolLogos[4]],
+      [this.actionButtons[24]],
+      this.projectTags[2]
+    ),
+    new Product(
       "Soul Frames", "soul-frames", "Web",
       this.thumbnailPath[4], this.introTextEN[4], this.introTextJP[4],
       [this.toolLogos[10], this.toolLogos[3], this.toolLogos[4]],
       [this.actionButtons[6], this.actionButtons[10]],
       this.projectTags[1]
+    ),
+    new Product(
+      "Swords of Gargantua", "swords-of-gargantua", "Game",
+      this.thumbnailPath[13], this.introTextEN[12], this.introTextJP[12],
+      [this.toolLogos[13], this.toolLogos[12]],
+      [this.actionButtons[25], this.actionButtons[26]],
+      this.projectTags[2]
+    ),
+    new Product(
+      "Motionbase Chat", "motionbase-chat", "Web",
+      this.thumbnailPath[11], this.introTextEN[13], this.introTextJP[13],
+      [this.toolLogos[10], this.toolLogos[3], this.toolLogos[4]],
+      [this.actionButtons[27]],
+      this.projectTags[2]
     ),
     new Product(
       "Land of Beasts (WIP)", "land-of-beasts", "Game",
