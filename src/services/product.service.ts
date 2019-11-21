@@ -55,11 +55,11 @@ export class ProductService{
     // 10: Monster Reapers VR
     "This <strong>Roguelike VR Monster Hunting Game</strong> was created by one of my friends and me over a pretty short amount of time. <strong>It got released on Steam Early Access on October 30th 2019</strong> and is <strong>constantly being updated</strong> according to the road map. My contributions to this project were <strong>not only programming</strong>, but also <strong>game design</strong>, <strong>dev-ops</strong> and <strong>promotion</strong>. Most of the things I've learned over the last years have come together and have been reinforced through this project.",
     // 11: Vacancy Chat
-    "VACANCY CHAT",
+    "Vacancy Creators is a <strong>matching service between creators and hiring companies</strong> in the game and anime industry, with the creation of which I was involved in <strong>working at Gengosha</strong>. I mainly took care of the <strong>built in chat service</strong> that allows company members and the matched creators to converse and created most of its functionality <strong>single handedly</strong>. I took care of <strong>both the front-end and back-end</strong> when implementing parts of the service and the biggest challenge I overcame was <strong>implementing a multi-database structure</strong> using Ruby on Rails 5.",
     // 12: Swords of Gargantua
-    "SOG",
+    "Swords of Gargantua is a fast-paced arena combat action game featuring <strong>realistic swordplay in an immersive VR-enabled online environment</strong>. I was involved in the development of this game <strong>working at Yomuneco</strong>. Not only did I implement <strong>gameplay functionality using either C++ or Blueprints with Unreal Engine 4</strong>, but I also <strong>came up with system improvements and created prototypes</strong> to present these and eventually have them included in the main game. Working on this project allowed me to gain <strong>excellent knowledge of VR technology and the industry</strong> around it. Furthermore I was able to learn advanced game development techniques for both <strong>client and server side</strong>.",
     // 13: Motionbase Chat
-    "MOTIONBASE"
+    "Jector Motionbase is a platform which enables <strong>video creators to share creations and collaborate together</strong> in a more effecient manner. Working at Gengosha we were tasked to <strong>expand the service by implementing a chat application</strong> into it. I took on <strong>both front-end and back-end tasks</strong> on this project and <strong>enormously grew my Ruby on Rails, Vue JS and Typescript knowledge</strong> throughout development."
   ]
 
   introTextJP: string[] = [
@@ -121,7 +121,11 @@ export class ProductService{
     // 12 Unreal Engine 4
     {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1547550814/PortfolioLogos/UE4simple.png", title: "Unreal Engine 4"},
     // 13 C++
-    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548583832/PortfolioLogos/CPPLogo.png", title: "C++"}
+    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548583832/PortfolioLogos/CPPLogo.png", title: "C++"},
+    // 14 Ruby on Rails
+    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1574343045/PortfolioLogos/rails_tool_logo.png", title: "Ruby on Rails"},
+    // 15 Vue Js
+    {imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1574343241/PortfolioLogos/Vue_js_logo.png", title: "Vue JS"},  
   ]
   
   actionButtons: Object[] = [
@@ -194,7 +198,7 @@ export class ProductService{
     new Product(
       "Vacancy Chat", "vacancy-chat", "Web",
       this.thumbnailPath[12], this.introTextEN[11], this.introTextJP[11],
-      [this.toolLogos[10], this.toolLogos[3], this.toolLogos[4]],
+      [this.toolLogos[14], this.toolLogos[15], this.toolLogos[10]],
       [this.actionButtons[24]],
       this.projectTags[2]
     ),
@@ -215,7 +219,7 @@ export class ProductService{
     new Product(
       "Motionbase Chat", "motionbase-chat", "Web",
       this.thumbnailPath[11], this.introTextEN[13], this.introTextJP[13],
-      [this.toolLogos[10], this.toolLogos[3], this.toolLogos[4]],
+      [this.toolLogos[14], this.toolLogos[15], this.toolLogos[10]],
       [this.actionButtons[27]],
       this.projectTags[2]
     ),
