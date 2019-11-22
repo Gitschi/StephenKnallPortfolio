@@ -1,17 +1,17 @@
 <div class="container fadeSlideLeft">
-  <div class="headLine white centered">
+  <div class="head-line white centered">
     <h1 [innerHTML]="languageService.displayIsEnglish ? textEnglish.firstName : textJapanese.firstName"></h1>
     <h1 [innerHTML]="languageService.displayIsEnglish ? textEnglish.secondName : textJapanese.secondName"></h1>
     <h2 [innerHTML]="languageService.displayIsEnglish ? textEnglish.job : textJapanese.job"></h2>
   </div>
   <div class="centered white">
     <div class="row">
-        <div class="homeContainer">
-          <div class="introductionContainer">
-            <p class="welcomeText" [innerHTML]="languageService.displayIsEnglish ? textEnglish.welcome : textJapanese.welcome"></p>
+        <div class="home-container">
+          <div class="introduction-container">
+            <p class="welcome-text" [innerHTML]="languageService.displayIsEnglish ? textEnglish.welcome : textJapanese.welcome"></p>
           </div>
-          <button class="btn btn-lg btn-warning homeButton growShrink" (click)="navigatePortfolio()" [innerHTML]="languageService.displayIsEnglish ? textEnglish.portfolio : textJapanese.portfolio"></button>
-          <button class="btn btn-lg btn-primary homeButton" (click)="navigateAbout()" [innerHTML]="languageService.displayIsEnglish ? textEnglish.about : textJapanese.about"></button>
+          <button class="btn btn-lg btn-warning home-button growShrink" (click)="navigatePortfolio()" [innerHTML]="languageService.displayIsEnglish ? textEnglish.portfolio : textJapanese.portfolio"></button>
+          <button class="btn btn-lg btn-primary home-button" (click)="navigateAbout()" [innerHTML]="languageService.displayIsEnglish ? textEnglish.about : textJapanese.about"></button>
         </div>
     </div>
   </div>

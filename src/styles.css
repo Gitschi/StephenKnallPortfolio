@@ -31,7 +31,7 @@ body:before {
   flex: 1;
 }
 
-.horizontalLine{ 
+.horizontal-line{ 
   display: block;
   border: none;
   color: white;
@@ -40,7 +40,7 @@ body:before {
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
 }
 
-.contentContainer{
+.content-container{
   background: #132b52; /* Fallback for older browsers */
   background-color: #132b5285;
   width: 100%;
@@ -58,15 +58,15 @@ body:before {
   color: white;
 }
 
-.boxParagraph{
+.box-paragraph{
   padding: 10px 15%;
 }
 
-.contactAnchor{
+.contact-anchor{
   color: white;
 }
 
-.contactAnchor:hover{
+.contact-anchor:hover{
   color: gray;
 }
 

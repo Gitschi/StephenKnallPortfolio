@@ -1,13 +1,13 @@
-.productTopRow{
+.product-top-row{
   display: flex;
   justify-content: space-around;
 }
 
-.alignmentHelper{
+.alignment-helper{
   width: 10%;
 }
 
-.memberAmountBadge{
+.member-amount-badge{
   position: absolute;
   right: 30px;
   top: 0px;
@@ -19,54 +19,54 @@
   border: 0px;
 }
 
-.soloTag{
+.solo-tag{
   background-color: #6ba4ff;
 }
 
-.groupTag{
+.group-tag{
   background-color: #6d8c3e;
 }
 
-.companyTag{
+.company-tag{
   background-color: #816bff;
 }
 
-.portfolioThumbnail{
+.portfolio-thumbnail{
   width: 512px;
   max-width: 90%;
   border-radius: 10px;
   margin: 20px;
 }
 
-.portfolioIntroText{
+.portfolio-intro-text{
   color: white;
   margin: 20px;
 }
 
-.categoryButtonBox{
+.category-button-box{
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.categoryButton{
+.category-button{
   margin: 10px;
 }
 
-.productName{
+.product-name{
   margin: 5px;
 }
 
-.toolLogos{
+.tool-logos{
   margin: 10px;
 }
 
-.toolLogo{
+.tool-logo{
   height: 60px;
   margin: 5px 10px;
 }
 
-.actionLinks{
+.action-links{
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -75,16 +75,16 @@
   padding-bottom: 10px;
 }
 
-.externalLink{
+.external-link{
   margin: 10px 20px;
 }
 
-.linkImage{
+.link-image{
   width: 200px;
   margin: 10px;
 }
 
-.productRuler{
+.product-ruler{
   width: 90%;
 	height: 6px;
 	background: url(https://res.cloudinary.com/knallcloud/image/upload/v1539696648/hr-11.png) repeat-x 0 0;
@@ -92,7 +92,7 @@
 }
 
 @media (max-width: 770px) {
-  .memberAmountBadge {
+  .member-amount-badge {
     position: static;
     margin-top: 20px;
     margin-bottom: 15px;

@@ -1,44 +1,36 @@
-.portfolioCategories{
-  text-align: center;
-}
-
-#headLineName{
-  size: 500px;
-}
-
-.headLine{
+.head-line{
   margin-top: 50px;
 }
 
-.headLine h1{
+.head-line h1{
   font-size: 70px;
 }
 
-.homeContainer{
+.home-container{
   padding-bottom: 40px;
 }
 
-.introductionContainer{
+.introduction-container{
   text-align: center;
   margin: 50px auto;
   width: 60%;
 }
 
-.welcomeText{
+.welcome-text{
   font-size: 20px;
   margin-bottom: 40px;
 }
 
-.homeButton{
+.home-button{
   margin: 5px 20px;
 }
 
 @media screen and (max-width: 425px){
-  .headLine h1{
+  .head-line h1{
     font-size: 50px;
   }
 
-  .headLine h2{
+  .head-line h2{
     font-size: 25px;
   }
 }

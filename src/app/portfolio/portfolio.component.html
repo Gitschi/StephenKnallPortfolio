@@ -1,34 +1,34 @@
 <div class="container">
-  <div class="contentContainer largeContainer">
-    <div class="categoryButtonBox fadeSlideBottom">
-      <button class="categoryButton btn" [ngClass]="selectedCategory === 'All' ? 'btn-primary' : 'btn-secondary'" (click)="setCategories($event)">All</button>
-      <button class="categoryButton btn" [ngClass]="selectedCategory === 'Game' ? 'btn-primary' : 'btn-secondary'" (click)="setCategories($event)">Game</button>
-      <button class="categoryButton btn" [ngClass]="selectedCategory === 'Web' ? 'btn-primary' : 'btn-secondary'" (click)="setCategories($event)">Web</button>
+  <div class="content-container largeContainer">
+    <div class="category-button-box fadeSlideBottom">
+      <button class="category-button btn" [ngClass]="selectedCategory === 'All' ? 'btn-primary' : 'btn-secondary'" (click)="setCategories($event)">All</button>
+      <button class="category-button btn" [ngClass]="selectedCategory === 'Game' ? 'btn-primary' : 'btn-secondary'" (click)="setCategories($event)">Game</button>
+      <button class="category-button btn" [ngClass]="selectedCategory === 'Web' ? 'btn-primary' : 'btn-secondary'" (click)="setCategories($event)">Web</button>
     </div>
 
     <!-- A single Product -->
     <div *ngFor="let product of products; let i = index" class="singleProduct fadeSlideBottom" [id]="product.id">
-      <h2 class="centered white productName" [innerHtml]="product.name"></h2>
-      <button disabled [innerHtml]="languageService.displayIsEnglish ? product.projectTag.tagTextEN : product.projectTag.tagTextJP" [ngClass]="['memberAmountBadge', product.projectTag.tagClass]"></button>
+      <h2 class="centered white product-name" [innerHtml]="product.name"></h2>
+      <button disabled [innerHtml]="languageService.displayIsEnglish ? product.projectTag.tagTextEN : product.projectTag.tagTextJP" [ngClass]="['member-amount-badge', product.projectTag.tagClass]"></button>
       <div class="row">
         <div class="col-sm-12 col-xl-6">
-          <img class="portfolioThumbnail" [src]="product.thumbnailPath">
+          <img class="portfolio-thumbnail" [src]="product.thumbnailPath">
         </div>
         <div class="col-sm-12 col-xl-6">
-          <p class="portfolioIntroText" [innerHtml]="languageService.displayIsEnglish ? product.introTextEN : product.introTextJP"></p>
-          <div class="toolLogos">
-            <img *ngFor="let logo of product.toolLogos" class="toolLogo" [src]="logo.imagePath" [title]="logo.title">
+          <p class="portfolio-intro-text" [innerHtml]="languageService.displayIsEnglish ? product.introTextEN : product.introTextJP"></p>
+          <div class="tool-logos">
+            <img *ngFor="let logo of product.toolLogos" class="tool-logo" [src]="logo.imagePath" [title]="logo.title">
           </div>
         </div>
       </div>
-        <div class="actionLinks">
+        <div class="action-links">
           <div *ngFor="let actionButton of product.actionButtons" class="actionLink"> 
-            <a class="externalLink" target="_blank" rel="noopener noreferrer" [href]="actionButton.link">
-              <img class="linkImage darken" [src]="actionButton.imagePath">
+            <a class="external-link" target="_blank" rel="noopener noreferrer" [href]="actionButton.link">
+              <img class="link-image darken" [src]="actionButton.imagePath">
             </a>          
           </div>
         </div>      
-      <hr *ngIf="i < products.length -1" class="productRuler">
+      <hr *ngIf="i < products.length -1" class="product-ruler">
     </div>
     <!-- A single Product -->
 

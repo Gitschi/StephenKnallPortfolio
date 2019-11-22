@@ -1,16 +1,16 @@
 <div class="container">
-  <div class="contentContainer largeContainer">
+  <div class="content-container largeContainer">
     <div class="fadeSlideBottom">
       <!-- Upper Part -->
       <h1 class="white">About Me</h1>
-      <img class="profilePicture" src="https://res.cloudinary.com/knallcloud/image/upload/v1539783915/ProfilePicture.png">
+      <img class="profile-picture" src="https://res.cloudinary.com/knallcloud/image/upload/v1539783915/ProfilePicture.png">
       <!-- Upper Part -->
 
       <!-- Lower Part -->
-      <div *ngFor="let aboutGroup of aboutGroups" class="aboutContent">
+      <div *ngFor="let aboutGroup of aboutGroups" class="about-content">
         <h2 [innerHTML]="languageService.displayIsEnglish ? aboutGroup.headerEN : aboutGroup.headerJP"></h2>
-        <p class="boxParagraph"[innerHTML]="languageService.displayIsEnglish ? aboutGroup.paragraphEN : aboutGroup.paragraphJP"></p>
-        <img class="aboutImage" [src]="aboutGroup.imgPath">
+        <p class="box-paragraph"[innerHTML]="languageService.displayIsEnglish ? aboutGroup.paragraphEN : aboutGroup.paragraphJP"></p>
+        <img class="about-image" [src]="aboutGroup.imgPath">
       </div>
       <!-- Lower Part -->
     </div>

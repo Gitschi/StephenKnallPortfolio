@@ -1,21 +1,13 @@
-.profilePicture{
+.profile-picture{
   width: 250px;
   margin: 20px;
 }
 
-.cvButtonContainer{
-  margin-bottom: 20px;
-}
-
-.cvButton{
-  margin: 10px;
-}
-
-.aboutContent{
+.about-content{
   color: white;
 }
 
-.aboutImage{
+.about-image{
   width: 250px;
   margin-bottom: 20px;
 }

@@ -7,11 +7,11 @@ export class ProductService{
 
   projectTags: object[] = [
     // 0: Solo
-    {tagTextEN: "Solo", tagTextJP: "ソロ", tagClass: "soloTag"},
+    {tagTextEN: "Solo", tagTextJP: "ソロ", tagClass: "solo-tag"},
     // 1: Group
-    {tagTextEN: "Group", tagTextJP: "グループ", tagClass: "groupTag"},
+    {tagTextEN: "Group", tagTextJP: "グループ", tagClass: "group-tag"},
     // 2: Company
-    {tagTextEN: "Company", tagTextJP: "企業", tagClass: "companyTag"}
+    {tagTextEN: "Company", tagTextJP: "企業", tagClass: "company-tag"}
   ]
   
   thumbnailPath: string[] = [

@@ -1,4 +1,4 @@
-#navBarContainer{
+#nav-bar-container{
   margin-bottom: 20px;
 }
 
@@ -6,18 +6,18 @@ nav{
   padding: 5px 20% 5px 20%;
 }
 
-#languageMenu{
+#language-menu{
   flex-direction: row !important;
 }
 
-.languageItem{
+.language-item{
   padding: 8px !important;
 }
 
-.languageChange{
+.language-change{
   width: 50px;
 }
 
-.languageChange:hover{
+.language-change:hover{
   cursor: pointer;
 }
