@@ -14,8 +14,8 @@ export class HomeComponent implements OnInit {
   textEnglish = {
     firstName: "Stephen",
     secondName: "Knall",
-    job: "Game Programmer & Software Engineer",
-    welcome: "I am a Tokyo based Software Engineer who is well versed in many facettes of programming, with a main focus on game programming and full-stack web development. Having spent multiple years living in China and Japan has given me a chance to experience enourmous personal growth and work on many projects with people from different backgrounds.",
+    job: "Software Engineer",
+    welcome: "I am a Tokyo based Software Engineer who is well versed <strong>Web Development</strong> and <strong>Game Programming</strong>. My work experience includes the creation of Chat Applications, VR Games and Crypto Games.",
     portfolio: "View Portfolio",
     about: "About Me"
   }
@@ -23,8 +23,8 @@ export class HomeComponent implements OnInit {
   textJapanese = {
     firstName: "クナル",
     secondName: "ステフェン",
-    job: "ゲームプログラマー・ソフトウェアエンジニア",
-    welcome: "プログラミングの複数の面の経験があり、特にはゲームプログラミングとフルスタックWEBエンジニアリングが熱中です。数年中国や日本に住んだことあるため、違う歴史がある人々と協力して色々のプロジェクトを完成できました。",
+    job: "ソフトウェアエンジニア",
+    welcome: "プログラミングの複数の面の経験があり、特にはゲームプログラミングとフルスタックWEBエンジニアリングが熱中です。実務経験はチャットアプリケーション、VR ゲームとブロックチェーンゲームの制作を含めています。",
     portfolio: "ポートフォリオを見る",
     about: "自己紹介"
   }

@@ -25,10 +25,10 @@ export class ProductService{
     "https://res.cloudinary.com/knallcloud/image/upload/v1548584381/PortfolioImages/BlockMatchLogo.jpg",
     "https://res.cloudinary.com/knallcloud/image/upload/v1552188598/PortfolioImages/Brawling_Heavies_Thumb.png",
     "https://res.cloudinary.com/knallcloud/image/upload/v1567304382/PortfolioImages/LandOfBeastsBanner.png",
-    "https://res.cloudinary.com/knallcloud/image/upload/v1572602848/PortfolioImages/Monster_Reapers_-_Release_confirm.png",
+    "https://res.cloudinary.com/knallcloud/image/upload/v1585908025/PortfolioImages/Portfolio_MR_TOM.png",
     "https://res.cloudinary.com/knallcloud/image/upload/v1574256795/PortfolioImages/Motionbase_banner.png",
     "https://res.cloudinary.com/knallcloud/image/upload/v1574257054/PortfolioImages/vacancy_chat_banner.png",
-    "https://res.cloudinary.com/knallcloud/image/upload/v1574258517/PortfolioImages/sog_banner.png"
+    "https://res.cloudinary.com/knallcloud/image/upload/v1585907678/PortfolioImages/Portfolio_SOG.png"
   ]
 
   introTextEN: string[] = [
@@ -51,9 +51,9 @@ export class ProductService{
     // 8: Brawling Heavies
     "<strong>Hybrid Fighting Game</strong> which implements concepts from multiple genres. The base for this project was built using C++ and the rest using <strong>Unreal Engine 4's</strong> blueprint system. Skills reinforced through this project are <strong>Implementation of accurate hit detection</strong>, <strong>UE4 animation state machines</strong>, <strong>animation notifies</strong> and <strong>communication between blueprints and C++</strong>.",
     // 9: Land of Beasts
-    "Work in progress <strong>Action RPG</strong> with an emphasis on cooperation between hunter and beast. The user can freely switch between the hunter and beast at any point in time while the couterpart will be controlled by Ai or a second player. Designing the code to dynamically adapt to these changes in player state at any time was quite the challenge. Other skills reinforced by this project include designing class inheritance for large scale projects and enemy/partner Ai behavior.",
+    "<strong>Action RPG</strong> with an emphasis on cooperation between hunter and beast. The user can freely switch between the hunter and beast at any point in time while the couterpart will be controlled by Ai or a second player. Designing the code to dynamically adapt to these changes in player state at any time was quite the challenge. Other skills reinforced by this project include designing class inheritance for large scale projects and enemy/partner Ai behavior.",
     // 10: Monster Reapers VR
-    "This <strong>Roguelike VR Monster Hunting Game</strong> was created by one of my friends and me over a pretty short amount of time. <strong>It got released on Steam Early Access on October 30th 2019</strong> and is <strong>constantly being updated</strong> according to the road map. My contributions to this project were <strong>not only programming</strong>, but also <strong>game design</strong>, <strong>dev-ops</strong> and <strong>promotion</strong>. Most of the things I've learned over the last years have come together and have been reinforced through this project.",
+    "This <strong>Rogue-lite VR Monster Hunting Game</strong> was created by one of my friends and me over a month. <strong>We released it on Steam Early Access on October 30th 2019</strong> and have <strong>been putting out periodic updates</strong> since then. My contributions to this project were <strong>not only programming</strong>, but also <strong>game design</strong>, <strong>dev-ops</strong> and <strong>promotion</strong>. Most of the things I've learned over the last years have come together and have been reinforced through this project.",
     // 11: Vacancy Chat
     "Vacancy Creators is a <strong>matching service between creators and hiring companies</strong> in the game and anime industry, with the creation of which I was involved in <strong>working at Gengosha</strong>. I mainly took care of the <strong>built in chat service</strong> that allows company members and the matched creators to converse and created most of its functionality <strong>single handedly</strong>. I took care of <strong>both the front-end and back-end</strong> when implementing parts of the service and the biggest challenge I overcame was <strong>implementing a multi-database structure</strong> using Ruby on Rails 5.",
     // 12: Swords of Gargantua
@@ -82,7 +82,7 @@ export class ProductService{
     // 8: Brawling Heavies
     "複数のジャンルの特徴を含める雑種格闘ゲームです。ゲームの基本がほとんどのプラットフォームファイターと近いが、RPGのような強化システムの実装で完全に新しい経験になります。プロジェクトのベースだけがC++で出来上がりシステムの大半はUE4のブループリントシステムで実装されました。",
     // 9: Land of Beasts
-    "進行中の作業のアクションRPGゲーム。ハンターと野獣のデュオを操作できるがカウンターパートはAiか他のプレイヤーに操作されます。あのいつでも可能のプレイヤーステートの変更にコードを適用されることがかなり苦労しました。その上クラス継続やAIの動作のこと色々勉強ができました。",
+    "アクションRPGゲーム。ハンターと野獣のデュオを操作できるがカウンターパートはAiか他のプレイヤーに操作されます。あのいつでも可能のプレイヤーステートの変更にコードを適用されることがかなり苦労しました。その上クラス継続やAIの動作のこと色々勉強ができました。",
     // 10: Monster Reapers VR
     "このローグライクモンスターハンティングVRゲームが一人の友達と一緒に作ってスチーム Early Access 自己出版をしています。ゲームのコア部分や最初のレベルパックが完成していますがこれからも絶えず新しいシステム、武器、敵やレベルを追加しています。私の役割はプログラミング以上もゲームデザイン、Dev-ops や PR をしました。初めての自己出版のタイトルなのでゲーム開発のことに全体的に色々勉強になりました。",
     // 11: Vacancy Chat
@@ -176,13 +176,13 @@ export class ProductService{
     // 22 Monster Reapers VR Steam
     {link: "https://store.steampowered.com/app/616680/Monster_Reapers_VR/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1572605985/PortfolioActionButtons/DownloadOnSteam.png"},
     // 23 Monster Reapers VR Youtube
-    {link: "https://www.youtube.com/watch?v=YnctTRTcHjA", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
+    {link: "https://www.youtube.com/watch?v=pxAIfCgfIoo&ab_channel=VirtualUppercutStudios", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
     // 24 Vacancy chat project
     {link: "https://vacancy-creators.com/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539767942/PortfolioActionButtons/Button_Project.png"},
     // 25 Swords of Gargantua Steam
     {link: "https://store.steampowered.com/app/895200/SWORDS_of_GARGANTUA/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1572605985/PortfolioActionButtons/DownloadOnSteam.png"},
     // 26 Swords of Gargantua Video
-    {link: "https://www.youtube.com/watch?v=EJTzZ9vHpkU&ab_channel=UploadVR", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
+    {link: "https://www.youtube.com/watch?v=_HPVmJZztPM&feature=emb_logo&ab_channel=SWORDSofGARGANTUA", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1548585216/PortfolioActionButtons/WatchVideoButton.png"},
     // 27 Motionbase chat project
     {link: "https://www.motionbase.jp/", imagePath: "https://res.cloudinary.com/knallcloud/image/upload/v1539767942/PortfolioActionButtons/Button_Project.png"},
   ]
@@ -224,7 +224,7 @@ export class ProductService{
       this.projectTags[2]
     ),
     new Product(
-      "Land of Beasts (WIP)", "land-of-beasts", "Game",
+      "Land of Beasts", "land-of-beasts", "Game",
       this.thumbnailPath[9], this.introTextEN[9], this.introTextJP[9],
       [this.toolLogos[13], this.toolLogos[12]],
       [this.actionButtons[20], this.actionButtons[21]],
